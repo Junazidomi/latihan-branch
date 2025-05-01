@@ -63,7 +63,7 @@
 ### EDA
 
 #### Visualisasi kolom bertipe kategori
-
+<br>
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis1.png" width="850" >
 <br>
 ### Visulisasi Kolom bertipe numerik
@@ -71,9 +71,8 @@
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis2.png" width="850" >
 ### Visualisasi antara Gender dan Motivasi siswa
 <br>
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis4.png" width="850 >
+<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis4.png" width="850" >
 <br>
-  
-###Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran
-<br>
+### Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran
+<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis4.png" width="850">
 

@@ -29,7 +29,7 @@
 3. Merancang strategi personalisasi pembelajaran dan rekomendasi intervensi berdasarkan hasil klasifikasi faktor risiko, sehingga setiap mahasiswa mendapat saran yang relevan dan berdampak terhadap peningkatan performa akademik.
 ### Solusi Statements
 
-1. Menggunakan algoritma mesin seperti LARS, GradientBossting , Linear Regression dan Random Forest Regressor untuk membangun model prediktif untuk menentukan nilai Ujian siswa berdasarkan karakteristik 
+1. Menggunakan algoritma mesin seperti LARS, GradientBossting , Linear Regression dan Random Forest Regressor untuk membangun model prediktif untuk menentukan nilai Ujian siswa berdasarkan karakteristik dalam berbasi regresi
 2. Melakukan feature selection dan hyperparameter tuning menggunakan metode Grid Search dan Recursive Feature Elimination (RFE) untuk meningkatkan akurasi model prediksi. Ini akan membantu mengidentifikasi faktor paling signifikan dalam dataset dan meningkatkan kinerja model.
 3. Mengintegrasikan model dengan sistem dashboard rekomendasi untuk mahasiswa dan dosen, yang memberikan peringatan dini bagi mahasiswa berisiko rendah serta saran peningkatan berdasarkan hasil model prediktif.
 

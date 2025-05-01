@@ -20,7 +20,6 @@
 ### Problem Statements
 
 1. Banyak antara mahasiswa mengalami penurunan performa pada ujian meskipun memiliki kehadiran bagus pada saat kelas, sehingga dapat disimpulkan bahwa ada beberapa faktor lain yang mempengaruhi performa siswa pada ujian
-
 2. Belum ada sistem yang efektif yang mengidentifikasi yang dapat mempengaruhi performa ujian siswa
 3. Strategi pembelajaran dan intervensi akademik bersifat umum sehingga pemetaan faktor yang mempengaruhi nilai ujian siswa
 
@@ -30,7 +29,7 @@
 3. Merancang strategi personalisasi pembelajaran dan rekomendasi intervensi berdasarkan hasil klasifikasi faktor risiko, sehingga setiap mahasiswa mendapat saran yang relevan dan berdampak terhadap peningkatan performa akademik.
 ### Solusi Statements
 
-1. Menggunakan algoritma mesin seperti LARS, Linear Regression dan lain-lain untuk membangun model prediktif untuk menentukan nilai Ujian siswa berdasarkan karakteristik 
+1. Menggunakan algoritma mesin seperti LARS, GradientBossting , Linear Regression dan Random Forest Regressor untuk membangun model prediktif untuk menentukan nilai Ujian siswa berdasarkan karakteristik 
 2. Melakukan feature selection dan hyperparameter tuning menggunakan metode Grid Search dan Recursive Feature Elimination (RFE) untuk meningkatkan akurasi model prediksi. Ini akan membantu mengidentifikasi faktor paling signifikan dalam dataset dan meningkatkan kinerja model.
 3. Mengintegrasikan model dengan sistem dashboard rekomendasi untuk mahasiswa dan dosen, yang memberikan peringatan dini bagi mahasiswa berisiko rendah serta saran peningkatan berdasarkan hasil model prediktif.
 
@@ -63,16 +62,31 @@
 ### EDA
 
 #### Visualisasi kolom bertipe kategori
-<br>
+<br> 
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis1.png" width="850" >
-<br>
-### Visulisasi Kolom bertipe numerik
-<br>
+
+#### Visulisasi Kolom bertipe numerik
+<br> 
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis2.png" width="850" >
-### Visualisasi antara Gender dan Motivasi siswa
-<br>
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis4.png" width="850" >
-<br>
-### Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran
+
+#### Visualisasi antara Gender dan Motivasi siswa
+<br> 
+<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis3.png" width="850" >
+
+#### Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis4.png" width="850">
 
+## Data Preparation
+
+Proses persiapan data yang dilakukan adalah :
+1. Melakukan hapus kolom Nan
+   Pada bagian ini setelah dilakukan identifikasi nilai kosong atau NaN, maka dilakukan drop Nan karena nilai NaN dapat mempengaruhi kualitas model dalam melakukan prediksi 
+2. Mengganti nilai tidak sesuai
+   Pada bagian ini setelah melakukan identfikasi nilai max setiap kolom terdapat nilai yang tidak sewajarnya maka dilakukan perbaikan pada nilai tersebut karena akan mempengaruhi kualitas model atau akan menjadi nilai tidak sewajarnya
+3. Melakukan Label Encode pada kolom kategori
+   Pada bagian prepartion ini melakukan transormasi data kategori menjadi data numerical dengan menggunakan LabelEncoder sehingga data kategori bisa digunakan dalam proses modeling. Hal ini dilakukan karena ketika melakukan training model, data yang diminta adalah data numerik sehingga harus dilakukan transformasi dari kategori ke data numerik dengan menggunakan metode seperti onehot encoder, label encoder dan lain-lain
+4. Melakukan feature selection pada kolom yang akan digunakan
+   Pada bagian ini ketika dilakukan training pada model tetapi didapat bahwa metrik evaluasi tidak maksimal maka dilakukan feature selection. Dengan cara ini dapat meningkatkan metrik evaluasi dengan memilih feature yang sesuai dengan fitur target. Metode yang biasa digunakan dalam melakukan feature selection yaitu Recursive Feature Elimination (RFE)
+## Modeling
+
+# Evaluation

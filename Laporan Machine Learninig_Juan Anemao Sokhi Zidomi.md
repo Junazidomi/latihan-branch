@@ -146,6 +146,31 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    - Kurang interpratif
    - Komputasi Berat
    - Kurang efisien untuk data real time atau low latency
+
+   Improvement:
+   Paremeter awal sebelum hypertune:
+
+   - max_depth=None
+   - min_samples_leaf=1
+   - min_samples_split=2
+   - n_estimators=500
+   - 
+   Evaluasi sebelum hypertune:
+   - MAE= 0.336518	
+   - MSE= 0.417358	
+   - R2_Score= 0.571506
+
+   Parameter setelah hypertune:
+   - max_depth=20
+   - min_samples_leaf=2
+   - min_samples_split=5
+   - n_estimators=200
+
+   Evaluasi setelah hypertune:
+   - MAE= 0.336518	
+   - MSE= 0.417358	
+   - R2_Score= 0.571506
+   - 
 5. Gradient Boosting Regressor
    Gradient Boosting Regressor adalah algoritma ensemble yang membangun model prediktif dalam bentuk sekumpulan pohon keputusan lemah yang dilatih secara berurutan untuk memperbaiki kesalahan dari model sebelumnya
 
@@ -157,5 +182,29 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    Kekurangan :
    - Lambat dilatih
    - Rentan terhadap overfitting jika tidak di hypertune
+
+   Improvement
+   
+   Parameter sebelum hypertune :
+   - n_estimators=100
+   - learning_rate=0.1
+   - subsample=1.0
+   - max_depth=3
+     
+   Evaluasi sebelum hypertune:
+   - MAE=0.302242		
+   - MSE= 0.360173
+   - R2_Score= 0.645183
+
+   Paremeter setelah hypertune:
+    - n_estimators=100
+   - learning_rate=0.8
+   - subsample=1.0
+   - max_depth=3
+
+   Evaluasi setelah hypertune:
+   - MAE= 0.297802		
+   - MSE= 0.357524
+   - R2_Score=0.647792
      
 ## Evaluation

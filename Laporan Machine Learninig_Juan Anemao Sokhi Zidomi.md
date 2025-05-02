@@ -101,8 +101,37 @@ Proses persiapan data yang dilakukan adalah :
    Pada bagian ini setelah melakukan identfikasi nilai max setiap kolom terdapat nilai yang tidak sewajarnya maka dilakukan perbaikan pada nilai tersebut karena akan mempengaruhi kualitas model atau akan menjadi nilai tidak sewajarnya
 3. Melakukan Label Encode pada kolom kategori
    Pada bagian prepartion ini melakukan transormasi data kategori menjadi data numerical dengan menggunakan LabelEncoder sehingga data kategori bisa digunakan dalam proses modeling. Hal ini dilakukan karena ketika melakukan training model, data yang diminta adalah data numerik sehingga harus dilakukan transformasi dari kategori ke data numerik dengan menggunakan metode seperti onehot encoder, label encoder dan lain-lain
-4. Melakukan feature selection pada kolom yang akan digunakan
+4. Melakukan pemisahan data train dan data test
+   Pada Bagian ini melakukan pemisahan data train dan data test menggunakan library sklean train_test_split untuk memisahkan data dan label
+6. Melakukan feature selection pada kolom yang akan digunakan
    Pada bagian ini ketika dilakukan training pada model tetapi didapat bahwa metrik evaluasi tidak maksimal maka dilakukan feature selection. Dengan cara ini dapat meningkatkan metrik evaluasi dengan memilih feature yang sesuai dengan fitur target. Metode yang biasa digunakan dalam melakukan feature selection yaitu Recursive Feature Elimination (RFE)
 ## Modeling
 
+Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu Least Angle Regression (LARS), Linear Regrssion, Random Forest Regressor dan Gradient Boosting Regressor. Tujuan di uji ke 4 algoritma tersebut adalah menentukan algoritma yang terbaik dalam memprediksi ujian siswa secara akurat dan andal
+
+1. LARS( Least Angle Regressoon)
+   LARS adalah algoritma regersi linear pada data dengan numlah fitur yang besar, bahkan lebih besar dari jumlah observasi
+
+   Kelebihan:
+   1. Efisien untuk data berdimensi tinggi
+   2. Menghasilkan seluruh regularaztion path
+   3. Cepat dan ringan secara komputasi
+      
+   Kekurangan:
+   1. Tidak cocok data linear
+   2. Kurang fleksibel dibandingkan embedde method
+   3. Rentan terhadap noise
+3. Linear Regression
+   
+   Linear Regression adalah algoritma yang mencoba menemukan garis lurus terbalik yang menggambarkan hubungan antara variabel independen (X) dengan variabel dependen (y)
+   Kelebihan:
+   1. Sederhana dan mudah di interpretasikan
+   2. Cepat dan Efisien
+   3. Tersedia banyak Tools
+   Kekurangan:
+   1. Hanya untuk hubungan linear
+   2. Sensitif terhadap outlier
+      
+3. Random Forest Regressor
+4. Gradient Boosting Regressor
 ## Evaluation

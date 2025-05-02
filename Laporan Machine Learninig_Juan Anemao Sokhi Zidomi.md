@@ -113,25 +113,49 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    LARS adalah algoritma regersi linear pada data dengan numlah fitur yang besar, bahkan lebih besar dari jumlah observasi
 
    Kelebihan:
-   1. Efisien untuk data berdimensi tinggi
-   2. Menghasilkan seluruh regularaztion path
-   3. Cepat dan ringan secara komputasi
+   - Efisien untuk data berdimensi tinggi
+   - Menghasilkan seluruh regularaztion path
+   - Cepat dan ringan secara komputasi
       
    Kekurangan:
-   1. Tidak cocok data linear
-   2. Kurang fleksibel dibandingkan embedde method
-   3. Rentan terhadap noise
+   - Tidak cocok data linear
+   - Kurang fleksibel dibandingkan embedde method
+   - Rentan terhadap noise
+      
 3. Linear Regression
    
    Linear Regression adalah algoritma yang mencoba menemukan garis lurus terbalik yang menggambarkan hubungan antara variabel independen (X) dengan variabel dependen (y)
    Kelebihan:
-   1. Sederhana dan mudah di interpretasikan
-   2. Cepat dan Efisien
-   3. Tersedia banyak Tools
+   - Sederhana dan mudah di interpretasikan
+   - Cepat dan Efisien
+   - Tersedia banyak Tools
+     
    Kekurangan:
-   1. Hanya untuk hubungan linear
-   2. Sensitif terhadap outlier
+   - Hanya untuk hubungan linear
+   - Sensitif terhadap outlier
       
 3. Random Forest Regressor
-4. Gradient Boosting Regressor
+   Random Forest Regressor adalaah algoritma prediktif ensemble decision tree yang meggabungkan beberapa tree dengan tujuan menghasilkan metrik yang optimal
+   
+   Kelebihan:
+   - Akurasi tinggi
+   - Mengurangi overfitting
+   - Dapat menangani data non linear dan kompleks
+
+   Kekurangan:
+   - Kurang interpratif
+   - Komputasi Berat
+   - Kurang efisien untuk data real time atau low latency
+5. Gradient Boosting Regressor
+   Gradient Boosting Regressor adalah algoritma ensemble yang membangun model prediktif dalam bentuk sekumpulan pohon keputusan lemah yang dilatih secara berurutan untuk memperbaiki kesalahan dari model sebelumnya
+
+   Kelebihan:
+   - Akurasi tinggi
+   - Bekerja baik pada data non linear
+   - Dapat disesuaikan (fleksibel)
+
+   Kekurangan :
+   - Lambat dilatih
+   - Rentan terhadap overfitting jika tidak di hypertune
+     
 ## Evaluation

@@ -65,17 +65,33 @@
 <br> 
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis1.png" width="850" >
 
+Kesimpulan:
+1. Pada kolom Motivation Level siswa kolom medium paling tinggi 
+2. Kualitas tenaga pengajar berada pada medium pada kolom Teacher Quality
+3. Rata- rata siswa sudah memiliki akses ke internet sesuai dengan Internet_Access
+4. Lingkunan belajar di dominasi positive dan netral sesuai dengan kolom Peer_influence
+5. Keterlibatan orang tua berada pada medium pada Parental_Involment
+
 #### Visulisasi Kolom bertipe numerik
 <br> 
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis2.png" width="850" >
+
+Kesimpulan:
+1. Pada kolom Studied Hours, siswa paling banyak jumlah belajar adalah 20 jam per minggu
+2. Pada Kolom Sleep_Hours siswa paling banyak banyak jumlah tidur adalah 7 jam per malam
+3. Pada Exam Score bahwa rentang ujian siswa paling banyak adalah 65-70
 
 #### Visualisasi antara Gender dan Motivasi siswa
 <br> 
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis3.png" width="850" >
 
+Kesimpulan:
+Motivasi belajar siswa berada pada level medium dan motivasi belajar di dominasi oleh laki-laki
 #### Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis4.png" width="850">
+<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis5.png" width="850">
 
+Kesimpulan:
+Dapat dilihat dari grafik terdapat 
 ## Data Preparation
 
 Proses persiapan data yang dilakukan adalah :
@@ -89,4 +105,4 @@ Proses persiapan data yang dilakukan adalah :
    Pada bagian ini ketika dilakukan training pada model tetapi didapat bahwa metrik evaluasi tidak maksimal maka dilakukan feature selection. Dengan cara ini dapat meningkatkan metrik evaluasi dengan memilih feature yang sesuai dengan fitur target. Metode yang biasa digunakan dalam melakukan feature selection yaitu Recursive Feature Elimination (RFE)
 ## Modeling
 
-# Evaluation
+## Evaluation

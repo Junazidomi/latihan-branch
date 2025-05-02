@@ -91,7 +91,7 @@ Motivasi belajar siswa berada pada level medium dan motivasi belajar di dominasi
 <img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis5.png" width="850">
 
 Kesimpulan:
-Dapat dilihat dari grafik terdapat 
+Dapat dilihat dari grafik terdapat bahwa terdapat hubungan antara Exam Score dengan Hours_Studied dan Attedance
 ## Data Preparation
 
 Proses persiapan data yang dilakukan adalah :

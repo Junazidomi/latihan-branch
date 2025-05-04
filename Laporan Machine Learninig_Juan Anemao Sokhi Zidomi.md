@@ -210,14 +210,19 @@ Dapat dilihat dari grafik terdapat bahwa terdapat hubungan antara Exam Score den
 
 Proses persiapan data yang dilakukan adalah :
 1. Melakukan hapus kolom Nan
-   Pada bagian ini setelah dilakukan identifikasi nilai kosong atau NaN, maka dilakukan drop Nan karena nilai NaN dapat mempengaruhi kualitas model dalam melakukan prediksi .
+   Pada proses ini setelah dilakukan identifikasi dataset pada missing value atau NaN, maka dilakukan penanganan missing value yaitu menghapus baris yang memiliki NaN atau missing value. Hal ini bertujuan untuk mengoptimalkan pelatihan model, jika tidak dilakukan maka model tidak akan optimal. Adapun kode program untuk menghapus missing value yaitu:
+
+   ```python
+      Data.dropna()
+   ```
+   
 2. Mengganti nilai tidak sesuai
-   Pada bagian ini setelah melakukan identfikasi nilai max setiap kolom terdapat nilai yang tidak sewajarnya maka dilakukan perbaikan pada nilai tersebut karena akan mempengaruhi kualitas model atau akan menjadi nilai tidak sewajarnya.
-3. Melakukan Label Encode pada kolom kategori
-   Pada bagian prepartion ini melakukan transormasi data kategori menjadi data numerical dengan menggunakan LabelEncoder sehingga data kategori bisa digunakan dalam proses modeling. Hal ini dilakukan karena ketika melakukan training model, data yang diminta adalah data numerik sehingga harus dilakukan transformasi dari kategori ke data numerik dengan menggunakan metode seperti onehot encoder, label encoder dan lain-lain.
+   Pada bagian ini setelah melakukan identfikasi nilai max setiap kolom terdapat nilai yang tidak sewajarnya, maka dilakukan perbaikan pada nilai tersebut karena akan mempengaruhi kualitas model atau akan menjadi nilai tidak sewajarnya.
+3. Melakukan konversi kolom kategorikal menjadi kolom numerica
+   Pada bagian proses ini melakukan transormasi data kategori menjadi data numerical dengan bertujuan untuk memudahkan pelatihan model. Selain itu, ketika melakukan pemodelan diperlukan data numerical. Adapun metode yang digunakan yaitu LabelEncoder, onehotencoder dan lain-lain. Pada proyek ini, transformasi kategorikal ke numerical menggunakan metode LabelEncoder
 4. Melakukan pemisahan data train dan data test
    Pada Bagian ini melakukan pemisahan data train dan data test menggunakan library sklean train_test_split untuk memisahkan data dan label
-6. Melakukan feature selection pada kolom yang akan digunakan.
+5. Melakukan feature selection pada kolom yang akan digunakan.
    Pada bagian ini ketika dilakukan training pada model tetapi didapat bahwa metrik evaluasi tidak maksimal maka dilakukan feature selection. Dengan cara ini dapat meningkatkan metrik evaluasi dengan memilih feature yang sesuai dengan fitur target. Metode yang biasa digunakan dalam melakukan feature selection yaitu Recursive Feature Elimination (RFE).
 ## Modeling
 

@@ -59,6 +59,115 @@
 | Gender | Jenis Kelamin siswa (Laki-Laki, Perempuan
 | Exam_Score | Nilai Ujian Akhir |
 
+Berikut ini adalah deskripsi dataset Student Performance yang dipakai pada proyek ini:
+
+1. Statistik dataset
+
+   Skrip:
+   
+   ``` python
+       Data.desribe()
+   ```
+   Hasil:
+
+   |     | Hours_Studied | Attendance | Sleep_Hours | Previous_Scores | Tutoring_Sessions | Physical_Activity | Exam_Score |
+   |-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|
+   | count     | 6607.000000   | 6607.000000| 6607.00000   | 6607.000000      | 6607.000000        | 6607.000000        | 6607.000000|
+   | mean      | 19.975329     | 79.977448  | 7.02906     | 75.070531        | 1.493719           | 2.967610           | 67.235659  |
+   | std       | 5.990594      | 11.547475  | 1.46812     | 14.399784        | 1.230570           | 1.031231           | 3.890456   |
+   | min       | 1.000000      | 60.000000  | 4.00000     | 50.000000        | 0.000000           | 0.000000           | 55.000000  |
+   | 25%       | 16.000000     | 70.000000  | 6.00000     | 63.000000        | 1.000000           | 2.000000           | 65.000000  |
+   | 50%       | 20.000000     | 80.000000  | 7.00000     | 75.000000        | 1.000000           | 3.000000           | 67.000000  |
+   | 75%       | 24.000000     | 90.000000  | 8.00000     | 88.000000        | 2.000000           | 4.000000           | 69.000000  |
+   | max       | 44.000000     | 100.000000 | 10.00000    | 100.000000       | 8.000000           | 6.000000           | 101.000000 |
+
+   Kesimpulan:
+   
+   Pada column Exam_Score terdapat nilai yang mismacth yaitu pada max nilai Exam_Score 101 yang melewati batas Nilai ujian normalnya yaitu 0-100 sehingga harus dilakukan perbaikan nilai tersebut.
+2. Info dataset
+
+   Skrip:
+   
+   ``` python
+       Data.info() 
+   ```
+   
+   Hasil:
+
+      | Index  | Column                      | Non-Null Count | Dtype  |
+   |-----|-----------------------------|----------------|--------|
+   | 0   | Hours_Studied               | 6607 non-null  | int64  |
+   | 1   | Attendance                  | 6607 non-null  | int64  |
+   | 2   | Parental_Involvement        | 6607 non-null  | object |
+   | 3   | Access_to_Resources         | 6607 non-null  | object |
+   | 4   | Extracurricular_Activities  | 6607 non-null  | object |
+   | 5   | Sleep_Hours                 | 6607 non-null  | int64  |
+   | 6   | Previous_Scores             | 6607 non-null  | int64  |
+   | 7   | Motivation_Level            | 6607 non-null  | object |
+   | 8   | Internet_Access             | 6607 non-null  | object |
+   | 9   | Tutoring_Sessions           | 6607 non-null  | int64  |
+   | 10  | Family_Income               | 6607 non-null  | object |
+   | 11  | Teacher_Quality             | 6529 non-null  | object |
+   | 12  | School_Type                 | 6607 non-null  | object |
+   | 13  | Peer_Influence              | 6607 non-null  | object |
+   | 14  | Physical_Activity           | 6607 non-null  | int64  |
+   | 15  | Learning_Disabilities       | 6607 non-null  | object |
+   | 16  | Parental_Education_Level    | 6517 non-null  | object |
+   | 17  | Distance_from_Home          | 6540 non-null  | object |
+   | 18  | Gender                      | 6607 non-null  | object |
+   | 19  | Exam_Score                  | 6607 non-null  | int64  |
+
+   Kesimpulan:
+   Pada dataset yang digunakan pada proyek ini terdapat 7 kolom numerical dan 13 kolom kategorical yang mendeskripsikan performansi siswa.
+3. Duplikasi Dataset
+
+   Skrip:
+   
+   ```python
+      Data.isna().sum()
+   ```
+
+   Hasil:
+
+      | Column                     | Missing Values |
+   |----------------------------|----------------|
+   | Hours_Studied              | 0              |
+   | Attendance                 | 0              |
+   | Parental_Involvement       | 0              |
+   | Access_to_Resources        | 0              |
+   | Extracurricular_Activities | 0              |
+   | Sleep_Hours                | 0              |
+   | Previous_Scores            | 0              |
+   | Motivation_Level           | 0              |
+   | Internet_Access            | 0              |
+   | Tutoring_Sessions          | 0              |
+   | Family_Income              | 0              |
+   | Teacher_Quality            | 78             |
+   | School_Type                | 0              |
+   | Peer_Influence             | 0              |
+   | Physical_Activity          | 0              |
+   | Learning_Disabilities      | 0              |
+   | Parental_Education_Level   | 90             |
+   | Distance_from_Home         | 67             |
+   | Gender                     | 0              |
+   | Exam_Score                 | 0              |
+
+   Kesimpulan:
+   Pada dataset diatas terdapat 3 kolom yang memiliki nilai missing value yaitu Teacher_Quality berjumlah 78 baris, Parental_Education_Level berjumlah 90 dan Distance_From_Home berjumlah 67 dan akan dilakukan proses penanganan missing value.
+4. Info Nilai missing
+   
+   Skrip:
+   ```python
+      jumlah_duplikat = Data.duplicated().sum()
+      print(jumlah_duplikat)
+   ```
+
+   Hasil:
+   | 0 |
+   |---|
+
+   Kesimpulan:
+   Pada dataset tidak ada data yang terduplikasi sehingga tidak melakukan penanganan duplikasi dataset.
 ### EDA
 
 #### Visualisasi kolom bertipe kategori

@@ -63,7 +63,9 @@
 
 #### Visualisasi kolom bertipe kategori
 <br> 
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis1.png" width="850" >
+
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Vis1.png)
+
 
 Kesimpulan:
 1. Pada kolom Motivation Level siswa kolom medium paling tinggi.
@@ -74,7 +76,8 @@ Kesimpulan:
 
 #### Visulisasi Kolom bertipe numerik
 <br> 
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/Vis2.png" width="850" >
+
+
 
 Kesimpulan:
 1. Pada kolom Studied Hours, siswa paling banyak jumlah belajar adalah 20 jam per minggu.
@@ -83,12 +86,14 @@ Kesimpulan:
 
 #### Visualisasi antara Gender dan Motivasi siswa
 <br> 
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis3.png" width="850" >
+
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis3.png)
 
 Kesimpulan:
 Motivasi belajar siswa berada pada level medium dan motivasi belajar di dominasi oleh laki-laki.
 #### Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran.
-<img src="https://github.com/Junazidomi/latihan-branch/blob/main/vis5.png" width="850">
+
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis5.png)
 
 Kesimpulan:
 Dapat dilihat dari grafik terdapat bahwa terdapat hubungan antara Exam Score dengan Hours_Studied dan Attedance.

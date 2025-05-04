@@ -370,18 +370,19 @@ Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik regresi yang
   
 Evaluasi Setiap Algoritma yang digunakan baik feature selection maupun hypertune parameter:
 
-| Algoritma  | MAE | MSE | R2_Score| 
-|---------|---------|---------|---------|
-| Lars| 	0.647150 | 	0.843629 | 0.133863 |
-| Linear Regression | 0.323278	| 0.417027 | 0.571846 |
-| Gradient Boosting | 0.271854 |	0.374515 | 0.615492|
-| Random Forest Regressor| 0.336518 | 0.417358 | 0.571506 |
-| Lars( After Feature Selection) | 0.670586 | 0.876003 | 0.137022 |
-| Linear Regression (after feature selection) | 0.340512 | 0.396035 | 0.609853 |
-| Gradient Boosting (After feature selection) | 0.302242 | 0.360173 |0.645183 |
-| Random Forest Regressor(After feature selection) | 0.349669 | 0.422766 | 0.583521
-| Gradient Boosting Regressor after hypertune | 0.297802| 0.357524 | 0.647792 |
-| Random Forest Regressor After Hypertunning | 0.339435 | 0.401822 | 0.604153 |
+| Algoritma                                           | MAE      | MSE      | R² Score |
+|----------------------------------------------------|----------|----------|----------|
+| Lars                                               | 0.647150 | 0.843629 | 0.133863 |
+| Linear Regression                                  | 0.222426 | 0.340777 | 0.650131 |
+| Gradient Boosting                                  | 0.266564 | 0.368137 | 0.622041 |
+| Random Forest Regressor                            | 0.325294 | 0.404018 | 0.585203 |
+| Lars (After Feature Selection)                     | 0.670586 | 0.876003 | 0.137022 |
+| Linear Regression (After Feature Selection)        | 0.286274 | 0.345934 | 0.659210 |
+| Gradient Boosting (After Feature Selection)        | 0.301585 | 0.359717 | 0.645632 |
+| Random Forest Regressor (After Feature Selection)  | 0.342325 | 0.413929 | 0.592226 |
+| Gradient Boosting Regressor (After Hypertuning)    | 0.299798 | 0.358021 | 0.647303 |
+| Random Forest Regressor (After Hypertuning)        | 0.332963 | 0.394935 | 0.610938 |
+
 
 Dari evaluasi diatas ada beberapa poin yang dapat disimpulkan:
 - Dari percobaan diatas algoritma Gradient Booosting memiliki performa yang baik dari algoritma lain bahkan setelah dilakukan feature selection mau hypertune parameter sehingga Algoritma Gradient Boosting dipilih.

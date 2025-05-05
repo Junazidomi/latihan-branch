@@ -218,11 +218,17 @@ Proses persiapan data yang dilakukan adalah :
    
 2. Mengganti nilai tidak sesuai
    Pada bagian ini setelah melakukan identfikasi nilai max setiap kolom terdapat nilai yang tidak sewajarnya, maka dilakukan perbaikan pada nilai tersebut karena akan mempengaruhi kualitas model atau akan menjadi nilai tidak sewajarnya.
-3. Melakukan konversi kolom kategorikal menjadi kolom numerica
-   Pada bagian proses ini melakukan transormasi data kategori menjadi data numerical dengan bertujuan untuk memudahkan pelatihan model. Selain itu, ketika melakukan pemodelan diperlukan data numerical. Adapun metode yang digunakan yaitu LabelEncoder, onehotencoder dan lain-lain. Pada proyek ini, transformasi kategorikal ke numerical menggunakan metode LabelEncoder
-4. Melakukan pemisahan data train dan data test
-   Pada Bagian ini melakukan pemisahan data train dan data test menggunakan library sklean train_test_split untuk memisahkan data dan label
-5. Melakukan feature selection pada kolom yang akan digunakan.
+
+3. Melakukan normalisasi data yang akan digunakan
+   Pada tahap ini ketika kolom pada data memiliki rentang data yang bervariasi makan dilakukan normalisasi data. Tujuannya yaitu untuk menyamakan rentang data setiap kolom dan memudahkan model mendapatkan pola. Adapun metode yang sering digunakan yaitu metode Normalization min max scaler dan standardscaler. Pada proyek ini menggunakan metode standarization. Standarscaler adalah metode mengubah rentang data kolom numerical menjadi rentang postitif dan negatif. Alasan menggunakan StandardScaler adalah tidak terpengaruh outlier s
+   
+4. Melakukan konversi kolom kategorikal menjadi kolom numerical
+   Pada bagian proses ini melakukan transormasi data kategori menjadi data numerical dengan bertujuan untuk memudahkan pelatihan model. Selain itu, ketika melakukan pemodelan diperlukan data numerical. Adapun metode yang digunakan yaitu LabelEncoder, onehotencoder ,OrdinalEncoder  dan lain-lain. Metode yang akan digunakan yaitu OrdinalEncoder karena kolom bertipe kategorical di proyek ini merupakan tipe urutan sedangkan onehotencoder dan labelencoder tidak memperhatikan urutan yang akan ditransformasi.
+   
+ 
+5. Melakukan pemisahan data train dan data test
+   Pada Bagian ini melakukan pemisahan data train dan data test menggunakan library sklean train_test_split untuk memisahkan data dependenden dan data independen yang kemudian dilakukan proses 
+6. Melakukan feature selection pada kolom yang akan digunakan.
    Pada bagian ini ketika dilakukan training pada model tetapi didapat bahwa metrik evaluasi tidak maksimal maka dilakukan feature selection. Dengan cara ini dapat meningkatkan metrik evaluasi dengan memilih feature yang sesuai dengan fitur target. Metode yang biasa digunakan dalam melakukan feature selection yaitu Recursive Feature Elimination (RFE).
 ## Modeling
 
@@ -242,10 +248,10 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    - Rentan terhadap noise.
 
    Evaluasi :
-   - MAE=0.670586		
-   - MSE=0.876003
+   - MAE=0.670586 
+   - MSE=0.876003 
    - R2=0.137022
-3. Linear Regression
+2. Linear Regression
    
    Linear Regression adalah algoritma yang mencoba menemukan garis lurus terbalik yang menggambarkan hubungan antara variabel independen (X) dengan variabel dependen (y).
    Kelebihan:
@@ -258,10 +264,10 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    - Sensitif terhadap outlier
 
    Evaluasi:
-   - MAE=0.340512	
-   - MSE=0.396035
-   - R2=0.609853
-4. Random Forest Regressor
+   - MAE=0.288827		
+   - MSE=0.351814
+   - R2=0.653417
+3. Random Forest Regressor
    Random Forest Regressor adalaah algoritma prediktif ensemble decision tree yang meggabungkan beberapa tree dengan tujuan menghasilkan metrik yang optimal.
    
    Kelebihan:
@@ -284,22 +290,22 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    - n_estimators=500
    - 
    Evaluasi sebelum hypertune:
-   - MAE= 0.336518	
-   - MSE= 0.417358	
-   - R2_Score= 0.571506
+   - MAE= 0.351454		
+   - MSE= 0.421986	
+   - R2_Score=  0.584289
 
    Parameter setelah hypertune:
-   - max_depth=20
+   - max_depth=10
    - min_samples_leaf=2
    - min_samples_split=5
    - n_estimators=200
 
    Evaluasi setelah hypertune:
-   - MAE= 0.336518	
-   - MSE= 0.417358	
-   - R2_Score= 0.571506
+   - MAE= 0.333907		  
+   - MSE= 0.389616	
+   - R2_Score= 0.616177
    - 
-6. Gradient Boosting Regressor
+4. Gradient Boosting Regressor
    Gradient Boosting Regressor adalah algoritma ensemble yang membangun model prediktif dalam bentuk sekumpulan pohon keputusan lemah yang dilatih secara berurutan untuk memperbaiki kesalahan dari model sebelumnya.
 
    Kelebihan:
@@ -320,20 +326,20 @@ Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu
    - max_depth=3
      
    Evaluasi sebelum hypertune:
-   - MAE=0.302242		
-   - MSE= 0.360173
-   - R2_Score= 0.645183
+   - MAE=0.306131	 	
+   - MSE= 0.366958	 
+   - R2_Score= 0.638499
 
    Paremeter setelah hypertune:
     - n_estimators=100
-   - learning_rate=0.8
+   - learning_rate=0.1
    - subsample=1.0
    - max_depth=3
 
    Evaluasi setelah hypertune:
-   - MAE= 0.297802		
-   - MSE= 0.357524
-   - R2_Score=0.647792
+   - MAE= 0.304678		 
+   - MSE= 0.363925
+   - R2_Score= 0.641486	
 
 Dari evaluasi setiap model maka yang model yang digunakan yaitu Gradient Boosting karena metrik evaluasi lebih tinggi daripada algoritma lain. Keuggulana model ini adalah memperbaiki kesalahan dari pelatihan yang berulang-ulan dari penggabungan pohon keputusan yang lemah.
 ## Evaluation
@@ -370,21 +376,23 @@ Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik regresi yang
   
 Evaluasi Setiap Algoritma yang digunakan baik feature selection maupun hypertune parameter:
 
-| Algoritma                                           | MAE      | MSE      | R² Score |
-|----------------------------------------------------|----------|----------|----------|
-| Lars                                               | 0.647150 | 0.843629 | 0.133863 |
-| Linear Regression                                  | 0.222426 | 0.340777 | 0.650131 |
-| Gradient Boosting                                  | 0.266564 | 0.368137 | 0.622041 |
-| Random Forest Regressor                            | 0.325294 | 0.404018 | 0.585203 |
-| Lars (After Feature Selection)                     | 0.670586 | 0.876003 | 0.137022 |
-| Linear Regression (After Feature Selection)        | 0.286274 | 0.345934 | 0.659210 |
-| Gradient Boosting (After Feature Selection)        | 0.301585 | 0.359717 | 0.645632 |
-| Random Forest Regressor (After Feature Selection)  | 0.342325 | 0.413929 | 0.592226 |
-| Gradient Boosting Regressor (After Hypertuning)    | 0.299798 | 0.358021 | 0.647303 |
-| Random Forest Regressor (After Hypertuning)        | 0.332963 | 0.394935 | 0.610938 |
+| Algoritma                                        | MAE      | MSE      | R2 Score |
+|--------------------------------------------------|----------|----------|----------|
+| Lars                                             | 0.647150 | 0.843629 | 0.133863 |
+| Linear Regression                                | 0.222426 | 0.340777 | 0.650131 |
+| Gradient Boosting                                | 0.266564 | 0.368137 | 0.622041 |
+| Random Forest Regressor                          | 0.325667 | 0.404316 | 0.584897 |
+| Lars (After Feature Selection)                   | 0.670586 | 0.876003 | 0.137022 |
+| Linear Regression (After Feature Selection)      | 0.288827 | 0.351814 | 0.653417 |
+| Gradient Boosting (After Feature Selection)      | 0.306131 | 0.366958 | 0.638499 |
+| Random Forest Regressor (After Feature Selection)| 0.351454 | 0.421986 | 0.584289 |
+| Gradient Boosting Regressor (After Hypertune)    | 0.304678 | 0.363925 | 0.641486 |
+| Random Forest Regressor (After Hypertune)        | 0.333907 | 0.389616 | 0.616177 |
+
 
 
 Dari evaluasi diatas ada beberapa poin yang dapat disimpulkan:
-- Dari percobaan diatas algoritma Gradient Booosting memiliki performa yang baik dari algoritma lain bahkan setelah dilakukan feature selection mau hypertune parameter sehingga Algoritma Gradient Boosting dipilih.
+- Dari percobaan diatas algoritma Linear Regression memiliki performa yang baik dari algoritma lain bahkan algoritma random forest dan Gradient boosting dilakukan hypertune parameter, sehingga Algoritma Linear digunakan sebagai model pada proyek ini. 
 - Metrik evaluasi ketika dilakukan feature selection mengalami kenaikan setiap algoritma.
 - Lars memiliki metrik evaluasi buruk dibandingkan dengan algoritma lain.
+- Random Forest dan Gradient Boosting mengalami kenaikan ketika dilakukan hypertune parameter

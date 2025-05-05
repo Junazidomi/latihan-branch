@@ -186,12 +186,13 @@ Kesimpulan:
 #### Visulisasi Kolom bertipe numerik
 <br> 
 
-
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis6.png)
 
 Kesimpulan:
 1. Pada kolom Studied Hours, siswa paling banyak jumlah belajar adalah 20 jam per minggu.
 2. Pada Kolom Sleep_Hours siswa paling banyak banyak jumlah tidur adalah 7 jam per malam.
 3. Pada Exam Score bahwa rentang ujian siswa paling banyak adalah 65-70.
+4. Terdapat kolom yang hampir distribusi normal dan distribusi tidak normal
 
 #### Visualisasi antara Gender dan Motivasi siswa
 <br> 
@@ -200,6 +201,8 @@ Kesimpulan:
 
 Kesimpulan:
 Motivasi belajar siswa berada pada level medium dan motivasi belajar di dominasi oleh laki-laki.
+
+#### Visualisasi distribusi data numei
 #### Visualisasi antara Nilai ujian dengan jumlah waktu belajar dan persentase kehadiran.
 
 ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis5.png)
@@ -211,25 +214,21 @@ Dapat dilihat dari grafik terdapat bahwa terdapat hubungan antara Exam Score den
 Proses persiapan data yang dilakukan adalah :
 1. Melakukan hapus kolom Nan
    Pada proses ini setelah dilakukan identifikasi dataset pada missing value atau NaN, maka dilakukan penanganan missing value yaitu menghapus baris yang memiliki NaN atau missing value. Hal ini bertujuan untuk mengoptimalkan pelatihan model, jika tidak dilakukan maka model tidak akan optimal. Adapun kode program untuk menghapus missing value yaitu:
-
-   ```python
-      Data.dropna()
-   ```
    
 2. Mengganti nilai tidak sesuai
    Pada bagian ini setelah melakukan identfikasi nilai max setiap kolom terdapat nilai yang tidak sewajarnya, maka dilakukan perbaikan pada nilai tersebut karena akan mempengaruhi kualitas model atau akan menjadi nilai tidak sewajarnya.
 
 3. Melakukan normalisasi data yang akan digunakan
-   Pada tahap ini ketika kolom pada data memiliki rentang data yang bervariasi makan dilakukan normalisasi data. Tujuannya yaitu untuk menyamakan rentang data setiap kolom dan memudahkan model mendapatkan pola. Adapun metode yang sering digunakan yaitu metode Normalization min max scaler dan standardscaler. Pada proyek ini menggunakan metode standarization. Standarscaler adalah metode mengubah rentang data kolom numerical menjadi rentang postitif dan negatif. Alasan menggunakan StandardScaler adalah tidak terpengaruh outlier s
+   Pada tahap ini ketika kolom pada data memiliki rentang data yang bervariasi makan dilakukan normalisasi data. Tujuannya yaitu untuk menyamakan rentang data setiap kolom dan memudahkan model mendapatkan pola. Adapun metode yang sering digunakan yaitu metode Normalization min max scaler dan standardscaler. Pada proyek ini menggunakan metode standarization. Standarscaler adalah metode mengubah rentang data kolom numerical menjadi rentang postitif dan negatif. Alasan menggunakan StandardScaler adalah tidak terpengaruh outlier. Selain itu, pada visualisasi kolom numerical terlihat ada beberapa distribusi normal dan mengalami skewd, sehingga menggunakan standardscaler untuk melakukan normalisasi data. 
    
 4. Melakukan konversi kolom kategorikal menjadi kolom numerical
-   Pada bagian proses ini melakukan transormasi data kategori menjadi data numerical dengan bertujuan untuk memudahkan pelatihan model. Selain itu, ketika melakukan pemodelan diperlukan data numerical. Adapun metode yang digunakan yaitu LabelEncoder, onehotencoder ,OrdinalEncoder  dan lain-lain. Metode yang akan digunakan yaitu OrdinalEncoder karena kolom bertipe kategorical di proyek ini merupakan tipe urutan sedangkan onehotencoder dan labelencoder tidak memperhatikan urutan yang akan ditransformasi.
+   Pada bagian proses ini melakukan transormasi data kategori menjadi data numerical dengan bertujuan untuk memudahkan pelatihan model. Selain itu, ketika melakukan pemodelan diperlukan data numerical. Adapun metode yang digunakan yaitu LabelEncoder, onehotencoder ,OrdinalEncoder  dan lain-lain. Metode yang akan digunakan yaitu OrdinalEncoder karena kolom bertipe kategorical di proyek ini merupakan tipe urutan sedangkan onehotencoder dan labelencoder tidak memperhatikan urutan yang akan ditransformasi. Alasan dilakukan normalisasi data 
    
- 
 5. Melakukan pemisahan data train dan data test
    Pada Bagian ini melakukan pemisahan data train dan data test menggunakan library sklean train_test_split untuk memisahkan data dependenden dan data independen yang kemudian dilakukan proses 
 6. Melakukan feature selection pada kolom yang akan digunakan.
    Pada bagian ini ketika dilakukan training pada model tetapi didapat bahwa metrik evaluasi tidak maksimal maka dilakukan feature selection. Dengan cara ini dapat meningkatkan metrik evaluasi dengan memilih feature yang sesuai dengan fitur target. Metode yang biasa digunakan dalam melakukan feature selection yaitu Recursive Feature Elimination (RFE).
+   
 ## Modeling
 
 Dalam melakukan modeling, terdapat 4 algoritma regresi yang akan digunakan yaitu Least Angle Regression (LARS), Linear Regrssion, Random Forest Regressor dan Gradient Boosting Regressor. Tujuan di uji ke 4 algoritma tersebut adalah menentukan algoritma yang terbaik dalam memprediksi ujian siswa secara akurat dan andal.

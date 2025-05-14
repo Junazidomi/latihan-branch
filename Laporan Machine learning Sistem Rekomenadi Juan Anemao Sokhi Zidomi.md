@@ -15,8 +15,31 @@ Referensi:
 3. Ricci, F., Rokach, L., & Shapira, B. (2015). Recommender Systems Handbook. Springer.
 ## Business Understandings
 
-## Data Understandings
+### Problem Statements
+### Goals
+### Solusi Statements
 
+## Data Understandings
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset ini menjelaskan informasi game di steam seperti judul game, popular tags dan lain-lain.
+
+| No | Atribute | Description |
+|---------|---------|---------|
+| 1 | Title | Judul Game di Steam |
+| 2 | Original Price | Harga game sebelum diskon dalam bentuk US Dolar ($) |
+| 3 | Discounted Price | Harga game setelah diskon dalam bentuk US Dolar ($) |
+| 4 | Release Date | Tanggal rilis game |
+| 5 | Link | Halaman link game pada Steam |
+| 6 | Game Description | Ringkasan singkat tentang game |
+| 7 | Recent Reviews Summary | Ringkasan umpan balik para pengguna baru baru ini  | 
+| 8 | All Reviews Summary | Ringkasan umpan balik para pengguna sepanjang waktu  |
+| 9 | Recent Reviews Number | Rangkuman Singkat jumlah review baru baru ini |
+| 10 | All Reviews Number |  Rangkuman singkat jumlah review |
+| 11 | Developer | Nama Pengembang Game | 
+| 12 | Publisher | Nama Publisher Game |
+| 13 | Supported Languages | Bahasa yang didukung pada game |
+| 14 | Popular Tags | Genre Game |
+| 15 | Game Features | Fitur yang terdapat pada game tersebut
+| 16 | Minimum Requirements| Spesifikasi minimum supaya dapat menjalankan game |
 ## Data Preparation
 
 ## Modeling and Result

@@ -54,10 +54,10 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
 
    |     | Title | Original Price | Discounted Price | Release Date | Link | Game Description | Recent Reviews Summary	All Reviews  | Recent Reviews Number | All Reviews Number | Developer | Publisher | Supported Languages | Popular Tags | Game Features | Minimum Requirements |
    |-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|
-   | count  | 71699 | 71700 |
-   | unique | 71699 | 654 | 
-   | top    | Pixel Gun 3D: PC Edition | Free |
-   | freq   | 1 | 17585 |
+   | count  | 71699 | 71700 |  71700 | 71569 | 71700 | 71489 | 56480
+   | unique | 71699 | 654 | 827 | 4441 | 71700 | 71090 | 18
+   | top    | Pixel Gun 3D: PC Edition | Free | Free | Coming Soon | https://store.steampowered.com/app/2524890/Pix... | Find the objects that are hidden on the map. | Very Positive | 
+   | freq   | 1 | 17585 | 17585 | 5887 | 1 | 34 | 11039
 2. Info dataset
    Skrip:
 

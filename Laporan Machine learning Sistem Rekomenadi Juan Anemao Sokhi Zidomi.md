@@ -40,6 +40,106 @@ Referensi:
 | 14 | Popular Tags | Genre Game |
 | 15 | Game Features | Fitur yang terdapat pada game tersebut
 | 16 | Minimum Requirements| Spesifikasi minimum supaya dapat menjalankan game |
+
+Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek ini:
+
+1. Statistik dataset
+
+   Skrip:
+   ```python
+      Game_df.describe()
+   ```
+
+   Hasil:
+
+   |     | Title | Original Price | Discounted Price | Release Date | Link | Game Description | Recent Reviews Summary	All Reviews  | Recent Reviews Number | All Reviews Number | Developer | Publisher | Supported Languages | Popular Tags | Game Features | Minimum Requirements |
+   |-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|
+   | count  | 71699 | 71700 |
+   | unique | 71699 | 654 | 
+   | top    | Pixel Gun 3D: PC Edition | Free |
+   | freq   | 1 | 17585 |
+2. Info dataset
+   Skrip:
+
+   ```python
+      Game_df.info()
+   ```
+
+   Hasil:
+   | Index  | Column                      | Non-Null Count | Dtype  |
+   |-----|-----------------------------|----------------|--------|
+   | 0   | Title                       | 71699 non-null  | object |
+   | 1   | Original Price              | 71700 non-null  | object |
+   | 2   | Discounted Price            | 71700 non-null  | object |
+   | 3   | Release Date                | 71569 non-null  | object |
+   | 4   | Link                        | 71700 non-null  | object |
+   | 5   | Game Description            | 71489 non-null  | object |
+   | 6   | Recent Reviews Summary      | 56480 non-null  | object |
+   | 7   | All Reviews Summary         | 5371 non-null   | object |
+   | 8   | Recent Reviews Number       | 56480 non-null  | object |
+   | 9   | All Reviews Number          | 5371 non-null   | object |
+   | 10  | Developer                   | 71479 non-null  | object |
+   | 11  | Publihser                   | 71183 non-null  | object |
+   | 12  | Supported Languages         | 71700 non-null  | object |
+   | 13  | Popular Tags                | 71700 non-null  | object |
+   | 14  | Game Features               | 71700 non-null  | object |
+   | 15  | Minimum Requirements        | 70576 non-null  | object |
+   
+3. Dimensi dataset
+   
+   Skrip:
+   ```python
+      jumlah_baris, jumlah_kolom=Game_df.shape
+      print("Jumlah baris pada dataframe:", jumlah_baris)
+      print("Jumlah kolom pada dataframe:, jumlah_kolom)
+   ```
+   Hasil:
+
+      Jumlah baris pada dataframe: 71700
+   <br>
+      Jumlah Kolom pada dataframe: 16
+   
+4. Duplikasi dataset
+
+   Skrip:
+   ```python
+      jumlah_duplikat=Game_df.duplicated().sum()
+      print("Jumlah duplikat data:", jumlah_duplikat)
+   ```
+
+   Hasil:
+   
+      Jumlah duplikat data: 0
+   
+5. Info  nilai missing
+
+   Skrip:
+   ```python
+      Game_df.isna().sum()
+   ```
+   Hasil:
+   | Column                     | Missing Values |
+   |----------------------------|----------------|
+   | Title                      | 1              |
+   | Original Price             | 0              |
+   | Discounted Price           | 0              |
+   | Release Date               | 131            |
+   | Link                       | 0              |
+   | Game Description           | 211            |
+   | Recent Reviews Summary     | 15220          |
+   | All Reviews Summary        | 66329          |
+   | Recent Reviews Number      | 15220          |
+   | All Reviews Number         | 66329          |
+   | Developer                  | 221            |
+   | Publisher                  | 517            |
+   | Supported Languages        | 0              |
+   | Popular Tags               | 0              |
+   | Game Features              | 0              |
+   | Minimum Requirements       | 1124           |
+   
+   Kesimpulan deskripsi dataset:
+   1. 2
+   2. 
 ## Data Preparation
 
 ## Modeling and Result

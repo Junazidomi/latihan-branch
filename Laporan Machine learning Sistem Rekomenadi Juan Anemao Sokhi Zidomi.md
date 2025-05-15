@@ -52,12 +52,12 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
 
    Hasil:
 
-   |     | Title | Original Price | Discounted Price | Release Date | Link | Game Description | Recent Reviews Summary	All Reviews  | Recent Reviews Number | All Reviews Number | Developer | Publisher | Supported Languages | Popular Tags | Game Features | Minimum Requirements |
-   |-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|
-   | count  | 71699 | 71700 |  71700 | 71569 | 71700 | 71489 | 56480
-   | unique | 71699 | 654 | 827 | 4441 | 71700 | 71090 | 18
-   | top    | Pixel Gun 3D: PC Edition | Free | Free | Coming Soon | https://store.steampowered.com/app/2524890/Pix... | Find the objects that are hidden on the map. | Very Positive | 
-   | freq   | 1 | 17585 | 17585 | 5887 | 1 | 34 | 11039
+   |     | Title | Original Price | Discounted Price | Release Date | Link | Game Description | Recent Reviews Summary | All Reviews Summary  | Recent Reviews Number | All Reviews Number | Developer | Publisher | Supported Languages | Popular Tags | Game Features | Minimum Requirements |
+   |-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|------------|
+   | count  | 71699 | 71700 | 71700 | 71569 | 71700 | 71489 | 56480 | 5371 | 56480 | 5371 | 71479 | 71183 | 71700 | 71700 | 71700 | 70576| 
+   | unique | 71699 | 654 | 827 | 4441 | 71700 | 71090 | 18 | 7 | 13391 | 5296 | 45353 | 38543 | 11058| 65817 | 5418 | 63201 | 
+   | top    |Pixel Gun 3D: PC Edition | Free | Free	Coming soon	https://store.steampowered.com/app/2524890/Pix...	Find the objects that are hidden on the map.	Very Positive	Very Positive	- Need more user reviews to generate a score	- 90% of the 624 user reviews for this game ar...	Choice of Games	Big Fish Games	['English']	['Indie', 'Casual']	['Single-player']	Requires a 64-bit processor and operating syst...
+   | freq   | 1 |	17585 | 17585 | 5887	| 1 | 34 | 11039 | 3151 | 18999 | 3 | 162 | 459 | 38083| 284 | 17262 | 274  | 
 2. Info dataset
    Skrip:
 

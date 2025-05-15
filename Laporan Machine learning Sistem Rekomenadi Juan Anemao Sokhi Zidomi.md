@@ -56,7 +56,7 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    |-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|-----------|---------------|------------|-------------|------------------|--------------------|--------------------|------------|------------|
    | count  | 71699 | 71700 | 71700 | 71569 | 71700 | 71489 | 56480 | 5371 | 56480 | 5371 | 71479 | 71183 | 71700 | 71700 | 71700 | 70576| 
    | unique | 71699 | 654 | 827 | 4441 | 71700 | 71090 | 18 | 7 | 13391 | 5296 | 45353 | 38543 | 11058| 65817 | 5418 | 63201 | 
-   | top    |Pixel Gun 3D: PC Edition | Free | Free	Coming soon	https://store.steampowered.com/app/2524890/Pix...	Find the objects that are hidden on the map.	Very Positive	Very Positive	- Need more user reviews to generate a score	- 90% of the 624 user reviews for this game ar...	Choice of Games	Big Fish Games	['English']	['Indie', 'Casual']	['Single-player']	Requires a 64-bit processor and operating syst...
+   | top    |Pixel Gun 3D: PC Edition | Free | Free | Coming soon | https://store.steampowered.com/app/2524890/Pix... | Find the objects that are hidden on the map. | Very Positive | Very Positive | - Need more user reviews to generate a score | - 90% of the 624 user reviews for this game ar... | Choice of Games | Big Fish Games | ['English']	| ['Indie', 'Casual'] | ['Single-player'] | Requires a 64-bit processor and operating syst... |
    | freq   | 1 |	17585 | 17585 | 5887	| 1 | 34 | 11039 | 3151 | 18999 | 3 | 162 | 459 | 38083| 284 | 17262 | 274  | 
 2. Info dataset
    Skrip:
@@ -137,9 +137,23 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | Game Features              | 0              |
    | Minimum Requirements       | 1124           |
    
-   Kesimpulan deskripsi dataset:
-   1. 2
-   2. 
+    Kesimpulan deskripsi dataset:
+   - Dari statistik dataframe diatas bahwa semua kolom bertipe kategorikal atau object
+   - Dimensi dataset game di Steam adalah 71700 baris dan 16 kolom
+   - Pada dataframe diatas tidak terdapat data terdupilikasi
+   - Pada dataframe diatas terdapat banyak nilai missing value dan hampir setiap kolom sehingga dilakukan drop nilai NaN
+   
+   ### EDA
+   <br>
+   1. Visualisasi review summary game di Steam
+   <br>
+   
+      ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
+   
+   2. Visualisasi tahun rilis game
+       ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
+   4. Visualisasi distribusi harga game di Steam
+   
 ## Data Preparation
 
 ## Modeling and Result

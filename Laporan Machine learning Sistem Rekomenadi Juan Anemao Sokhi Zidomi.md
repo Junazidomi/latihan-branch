@@ -16,9 +16,19 @@ Referensi:
 ## Business Understandings
 
 ### Problem Statements
+Berikut adalah problem statements pada proyek ini:
+- Pengguna Steam kesulitan dalam menemukan game yang relevan dengan preferensi karena banyaknya game tersedia di Steam
+- Game Indie atau game kurang populer cenderung kalah bersaing dengan pengembang game populer
+- Mengidentifikasi faktor yang paling mempengaruhi ketertarikan pengguna terhadap game di Steam
 ### Goals
+Berikut adalah Goals yang akan dicapai:
+- Membangun sistem rekomendasi yang dapat secara otomatis yang dapat menyarankan game sesuai dengan preferensi pengguna di Steam
+- Membangun sistem rekomendasi yang dapat memberikan peluang lebih merata bagi semua game untuk muncul rekomendasi
+- Membangun sistem rekomendasi berdasarkan preferensi pengguna yiatu berdasarkan genre game pengguna mainkan
+  
 ### Solusi Statements
-
+- Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity
+- Menggunakan evaluasi pada masing masing sistem rekomendasi
 ## Data Understandings
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset ini menjelaskan informasi game di steam seperti judul game, popular tags dan lain-lain.
 
@@ -143,17 +153,27 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    - Pada dataframe diatas tidak terdapat data terdupilikasi
    - Pada dataframe diatas terdapat banyak nilai missing value dan hampir setiap kolom sehingga dilakukan drop nilai NaN
    
-   ### EDA
-   <br>
-   1. Visualisasi review summary game di Steam
-   <br>
-   
-      ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
-   
-   2. Visualisasi tahun rilis game
-       ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
-   4. Visualisasi distribusi harga game di Steam
-   
+### EDA
+<br>
+Visualisasi review summary game di Steam
+<br>
+
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
+<br>   
+Visualisasi tahun rilis game
+<br>
+
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis22.png)
+<br> 
+Visualisasi distribusi harga game di Steam
+<br>
+
+![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis33.png)
+
+Kesimpulan:
+- Game di Steam didominasi feedback very positive
+- Game di Steam didominasi tahun rilis 2020
+- Game di Steam paling banyak 0 atau bisa didapatkan secara gratis (free)
 ## Data Preparation
 
 ## Modeling and Result

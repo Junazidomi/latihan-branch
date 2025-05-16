@@ -258,13 +258,12 @@ Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik sistem rekom
    $$
     \text{Precision@K} = \frac{|\text{Relevant Items} \cap \text{Recommended Items}@K|}{K}
    $$
-
-   
+ 
 3. Recall
    Recall adalah metrik evaluasi seberapa banyak item yang berhasil direkomendasikan dari semua item relevan yang diketahui
    Rumus:
    
-   $$
+    $$
     \text{Recall@K} = \frac{|\text{Relevant Items} \cap \text{Recommended Items}@K|}{|\text{Relevant Items}|}
    $$
 

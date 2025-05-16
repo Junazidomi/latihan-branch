@@ -252,25 +252,27 @@ Hasil:
 Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik sistem rekomendasi sebagai berikut:
 
 1. Precision
-   Precision adalah metrik evaluasi yang mengukur proporsi item yang relevan dalam top K rekomendasi
+   Precision adalah metrik evaluasi yang mengukur proporsi item yang relevan dalam top K rekomendasi. Adapun rumus precision sebagai berikut:
    
-   Rumus:
+           Precision@K = (Jumlah item relevan dalam Top-K) / K
 
-   $$
-    \text{Precision@K} = \frac{|\text{Relevant Items} \cap \text{Recommended Items}@K|}{K}
-   $$
-3. Recall
-   Recall adalah metrik evaluasi seberapa banyak item yang berhasil direkomendasikan dari semua item relevan yang diketahui.
-   
-   Rumus:
-    $$
-    \text{Recall@K} = \frac{|\text{Relevant Items} \cap \text{Recommended Items}@K|}{|\text{Relevant Items}|}
-   $$
+2. Recall
+   Recall adalah metrik evaluasi seberapa banyak item yang berhasil direkomendasikan dari semua item relevan yang diketahui. Adapun rumus recall sebagai berikut:
 
-5. F1 Score
-   F1 Score adalah metrik evaluasi kombinasi dari precision dan recall.
+            Recall@K= Jumlah total item relevan / Jumlah item relevan dalam Top-K
+​
+3. F1 Score
+   F1 Score adalah metrik evaluasi kombinasi dari precision dan recall. Adapun rumus F1 Score sebagai berikut:
    
-   Rumus:
-     $$
-  \text{F1@K} = \frac{2 \cdot \text{Precision@K} \cdot \text{Recall@K}}{\text{Precision@K} + \text{Recall@K}}
-  $$
+            F1@K= (Precision@K+Recall@K) / 2⋅Precision@K⋅Recall@K
+​
+ Evaluasi setiap pendekatan
+ 
+| Pendekatan Content-Base Filtering                | Precision |  Recall   | F1 Score |
+|--------------------------------------------------|---------- |---------- |----------|
+| Cosine Similarity                                | 0.7070837406321155  |  0.8496578690126935  | 0.7641103818522876 |
+| Jaccard Similarity                               | 0.622  | 0.896  | 0.72 |
+
+Kesimpulan:
+
+Dari perbandingan metrik evaluasi dari kedua pendekatan yaiti Cosine similarity dan Jaccard Similarity bahwa nilai Precision dan F1 Score pada Cosini similarity lebih tinggi dari pada Jaccard similarity sedangkan recall pada Jaccard similarity lebih besar dari pada Cosine similarity. Dapat disimpulkan bahwa yang akan digunakan pada proyek ini adalah Content Based Filtering dengan menggunakan Cosine Similarity

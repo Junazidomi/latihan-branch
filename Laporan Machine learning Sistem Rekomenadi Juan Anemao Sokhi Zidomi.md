@@ -253,22 +253,23 @@ Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik sistem rekom
 
 1. Precision
    Precision adalah metrik evaluasi yang mengukur proporsi item yang relevan dalam top K rekomendasi
-   Rumus:
    
+   Rumus:
+
    $$
     \text{Precision@K} = \frac{|\text{Relevant Items} \cap \text{Recommended Items}@K|}{K}
    $$
- 
 3. Recall
-   Recall adalah metrik evaluasi seberapa banyak item yang berhasil direkomendasikan dari semua item relevan yang diketahui
-   Rumus:
+   Recall adalah metrik evaluasi seberapa banyak item yang berhasil direkomendasikan dari semua item relevan yang diketahui.
    
+   Rumus:
     $$
     \text{Recall@K} = \frac{|\text{Relevant Items} \cap \text{Recommended Items}@K|}{|\text{Relevant Items}|}
    $$
 
 5. F1 Score
    F1 Score adalah metrik evaluasi kombinasi dari precision dan recall.
+   
    Rumus:
      $$
   \text{F1@K} = \frac{2 \cdot \text{Precision@K} \cdot \text{Recall@K}}{\text{Precision@K} + \text{Recall@K}}

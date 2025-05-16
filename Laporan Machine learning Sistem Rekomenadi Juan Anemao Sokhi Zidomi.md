@@ -27,8 +27,8 @@ Berikut adalah Goals yang akan dicapai:
 - Membangun sistem rekomendasi berdasarkan preferensi pengguna yiatu berdasarkan genre game pengguna mainkan
   
 ### Solusi Statements
-- Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity
-- Menggunakan evaluasi pada masing masing sistem rekomendasi
+- Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity dan menggunakan collaborative filtering
+- Menggunakan evaluasi pada masing masing sistem rekomendasi.
 ## Data Understandings
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset ini menjelaskan informasi game di steam seperti judul game, popular tags dan lain-lain.
 
@@ -185,5 +185,67 @@ Proses persiapan data yang dilakukan pada proyek ini sebagai berikut:
 5. Melakukan preprocessing text menggunakan TfIdf vectorizer atau melakukan tokenisasi untuk mempresentasikan kolom target ke matriks agar dapat diproses.
     
 ## Modeling and Result
+Adapun pendekatan yang dilakukan dalam membangun sistem rekomendasi adalah menggunakan sistem content-based filterng. Dalam membangun sistem rekomendasi content based filtering menggunakan 2 metode yaitu content-based filtering menggunakan cosine similarity dan Jaccard similarity.
+
+1. Content-Base filtering Cosine similarity
+   Cosine similarity adalah teknik mengukur kesamaan antara 2 vektor dan menentukan apakah kedua vektor tersebut menunjuk ke arah yang sama. Menghitung sudut cosinus antara 2 vektor, semakin kecil sudut cosinus semakin besar nilai cosine similarity. Adapun rumus Cosine similarity sebagai berikut:
+   
+   $$
+\cos{\theta} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{a}\| \|\vec{b}\|} = \frac{\sum_{i=1}^{n} a_i b_i}{\sqrt{\sum_{i=1}^{n} a_i^2} \sqrt{\sum_{i=1}^{n} b_i^2}}
+$$
+
+Kelebihan:
+- Efektif jika representasi fitur kaya (TFIDF)
+- Bisa Menangkap kedekatan semantik antar item masukan
+- Cocok untuk data dengan banyak fitur numerik atau teks
+
+Kekurangan:
+- Perlu representasi fitur yang baik
+- Kurang efektif jika sangat pars (fitur jarang muncul)
+- Tidak bisa mengenali relasi antar item yang tidak mirip kontennya 
+
+Adapun output rekomendasi sebagai berikut:
+
+Script:
+```python
+    game_recom('Call of Duty®')
+```
+
+Hasil:
+| Title                         | Popular Tags                   |
+|------------------------------|---------------------------------|
+| Counter-Strike: Global Offensive | FPS Shooter Multiplayer     |
+| World War 3                  | FPS Multiplayer Shooter         |
+| BattleBit Remastered         | FPS Shooter Multiplayer         |
+| Battlefield 4™               | Multiplayer FPS Shooter         |
+| SharpShooter3D               | Action FPS Shooter              |
+
+      
+2. Jaccard Similarity  adalah teknik yang dikenalkan Paul Jaccard,metode pengukuran kesamaan antara 2 himpunan dan dihitung sebagai perbandingan antara jumlah elemen yang sama (intersection) dengan jumlah total elemen unik himpunan.
+  
+  $$
+J(A, B) = \frac{|A \cap B|}{|A \cup B|} = \frac{|A \cap B|}{|A| + |B| - |A \cap B|}
+$$
+
+Kelebihan:
+- Mudah dan cepat diimplementasikan 
+- Cocok untuk data yang hanya memiliki informasi kategori
+- Tidak terlalu sensitif terhadap noise dalam data
+Kelemahan:
+- Tidak mempertimbangkan frekuensi atau pentingnya fitur(tidak ada bobot)
+- Kondisi presisi dalam konteks teks atau fitur yang kompleks
+- Tidak bisa membedakan seberapa penting fitur yang tumpah tindih
+
+Adapun output rekomendasi sebagai berikut:
+```python
+   print(game_recomjacc_tfidf("Call of Duty®"))
+```
+Hasil:
+| Index | Title                            |
+|-------|----------------------------------|
+| 1     | Counter-Strike: Global Offensive |
+| 19    | BattleBit Remastered             |
+| 723   | Battlefield 4™                   |
+
 
 ## Evaluation

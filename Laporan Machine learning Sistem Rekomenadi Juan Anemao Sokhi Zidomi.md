@@ -176,6 +176,14 @@ Kesimpulan:
 - Game di Steam paling banyak 0 atau bisa didapatkan secara gratis (free)
 ## Data Preparation
 
+Proses persiapan data yang dilakukan pada proyek ini sebagai berikut:
+
+1. Melakukan hapus kolom yang berisi NaN atau missing value. Pada proses ini setelah dilakukan identifikasi dataset pada missing value atau NaN, maka dilakukan penanganan missing value yaitu menghapus baris yang memiliki NaN atau missing value. Hal ini bertujuan untuk mengoptimalkan sistem rekomendasi content-base filtering dan mendapatkan informasi yang secara lengkap supaya dapat memberikan rekomendasi secara akurat.
+2. Melakukan identifikasi pada kolom Original Price. Setelah itu, melakukan pengubahan kata unique 'Free' menjadi 0, kemudian melakukan pengubahan tipe pada kolom Original Price dari object menjadi float dan terakhir melakukan pengubahan nama kolom dari Original Price menjadi Original Price (S). Hal ini bertujuan untuk melakukan visualisasi pada kolom harga game di steam dan melihat berapa banyak game gratis dan game harga mahal
+3. Melakukan format ulang tanggal rilis game dari tanggal rilis menjadi tahun rilis. Hal ini bertujuan untuk melakukan visualisasi tahun rilis game pada Steam. Selain itu, melakukan pengubahan nama kolom dari Release Date menjadi Release Year
+4. Melakukan pemrosesan pada kolom Popular Tags dimana melakukan pengambilan 3 tag dari 20 genre. Selain itu, menghapus spasi pada tag supaya dapat diproses ke tahap selanjutnya
+5. Melakukan preprocessing text menggunakan TfIdf vectorizer atau melakukan tokenisasi untuk mempresentasikan kolom target ke matriks agar dapat diproses.
+    
 ## Modeling and Result
 
 ## Evaluation

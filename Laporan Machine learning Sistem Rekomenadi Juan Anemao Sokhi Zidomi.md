@@ -70,7 +70,7 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | freq   | 1 |	17585 | 17585 | 5887	| 1 | 34 | 11039 | 3151 | 18999 | 3 | 162 | 459 | 38083| 284 | 17262 | 274  |
 
    Kesimpulan:
-   Dari hasil skrip diatas didapatkan bahwa dataset diatas bahwa game di steam memiliki rata-rata review positif  dari pengguna. Selain itu, game diSteam
+   Dari hasil skrip diatas didapatkan bahwa dataset diatas bahwa game di steam memiliki rata-rata review positif  dari pengguna. Selain itu, game di Steam paling banyak game free atau dapat didapatkan secara gratis dan pada release year paling banyak game coming soon
 3. Info dataset
    Skrip:
 
@@ -97,8 +97,10 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | 13  | Popular Tags                | 71700 non-null  | object |
    | 14  | Game Features               | 71700 non-null  | object |
    | 15  | Minimum Requirements        | 70576 non-null  | object |
-   
-4. Dimensi dataset
+
+   Kesimpulan:
+   Dari skrip diatas didapatkan bahwa semua kolom pada dataset ini memiliki tipe object 
+5. Dimensi dataset
    
    Skrip:
    ```python
@@ -112,7 +114,9 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    <br>
       Jumlah Kolom pada dataframe: 16
    
-5. Duplikasi dataset
+   Kesimpulan:
+   Dari skrip diatas, dapat disimpulkan bahwa dataset diatas memiliki 71700 baris dan 16 kolom 
+7. Duplikasi dataset
 
    Skrip:
    ```python
@@ -124,7 +128,10 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    
       Jumlah duplikat data: 0
    
-6. Info  nilai missing
+   Kesimpulan:
+   Dari skrip diatas mengindikasikan bahwa tidak ada data duplikat pada dataset diatas
+   
+9. Info  nilai missing
 
    Skrip:
    ```python
@@ -150,6 +157,8 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | Game Features              | 0              |
    | Minimum Requirements       | 1124           |
    
+   Kesimpilan:
+   Dari skrip diatas didapatkan hampir semua kolom memiliki nilai missing value dan membutuhkan penanganan terhadap missing value supaya sistem dapat bekerja secara optimal.
 ### EDA
 <br>
 Visualisasi review summary game di Steam
@@ -157,20 +166,25 @@ Visualisasi review summary game di Steam
 
 ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
 <br>   
+Kesimpulan: 
+Dari visualisasi diatas didapatkan bahwa feedback dari pengguna game steam yaitu very positive hal ini menandakan bahwa semua game di Steam mendapatkan apresiasi positif dari pengguna
+
 Visualisasi tahun rilis game
 <br>
 
 ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis22.png)
 <br> 
+
+Kesimpulan:
+Dari visualisasi diatas didapat bahwa game paling banyak di Steam adalah game rilis pada tahun 2020
 Visualisasi distribusi harga game di Steam
 <br>
 
 ![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis33.png)
 
 Kesimpulan:
-- Game di Steam didominasi feedback very positive
-- Game di Steam didominasi tahun rilis 2020
-- Game di Steam paling banyak 0 atau bisa didapatkan secara gratis (free)
+Dari visualisasi diatas didapatkan bahwa game steam paling banyak harga 0 $ atau dapat dikatakan gratis dan harga game paling mahal pada sekitar 140$
+
 ## Data Preparation
 
 Proses persiapan data yang dilakukan pada proyek ini sebagai berikut:

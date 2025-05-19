@@ -30,7 +30,7 @@ Berikut adalah Goals yang akan dicapai:
 - Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity dan menggunakan collaborative filtering
 - Menggunakan evaluasi pada masing masing sistem rekomendasi.
 ## Data Understandings
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset ini menjelaskan informasi game di steam seperti judul game, popular tags dan lain-lain.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada program ini, menjelaskan 
 
 | No | Atribute | Description |
 |---------|---------|---------|

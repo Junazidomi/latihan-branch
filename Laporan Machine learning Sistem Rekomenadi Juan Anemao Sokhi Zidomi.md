@@ -19,18 +19,16 @@ Referensi:
 Berikut adalah problem statements pada proyek ini:
 - Pengguna Steam kesulitan dalam menemukan game yang relevan dengan preferensi karena banyaknya game tersedia di Steam
 - Game Indie atau game kurang populer cenderung kalah bersaing dengan pengembang game populer
-- Mengidentifikasi faktor yang paling mempengaruhi ketertarikan pengguna terhadap game di Steam
 ### Goals
 Berikut adalah Goals yang akan dicapai:
 - Membangun sistem rekomendasi yang dapat secara otomatis yang dapat menyarankan game sesuai dengan preferensi pengguna di Steam
 - Membangun sistem rekomendasi yang dapat memberikan peluang lebih merata bagi semua game untuk muncul rekomendasi
-- Membangun sistem rekomendasi berdasarkan preferensi pengguna yiatu berdasarkan genre game pengguna mainkan
   
 ### Solusi Statements
-- Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity dan menggunakan collaborative filtering
-- Menggunakan evaluasi pada masing masing sistem rekomendasi.
+- Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity. 
+- Melakukan evaluasi pada metode cosine similarity dan jaccard similarity dan melakukan rekomendasi game berdasarkan preferensi pengguna.
 ## Data Understandings
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada program ini, menjelaskan 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada proyek ini, menjelaskan bahwa steam memiliki game dengan judul yang berbeda-beda. Selain itu, dataset ini memberikan informasi atau gambaran tentang game tersebut seperti harga game , harga setelah diskon di steam jika sedang ada event menarik, pengembang, publisher , review penngguna , genre game dan lain-lain. Hal ini dapat membantu dalam melakukan sistem rekomendasi.
 
 | No | Atribute | Description |
 |---------|---------|---------|
@@ -71,7 +69,7 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
 
    Kesimpulan:
    Dari hasil skrip diatas didapatkan bahwa dataset diatas bahwa game di steam memiliki rata-rata review positif  dari pengguna. Selain itu, game di Steam paling banyak game free atau dapat didapatkan secara gratis dan pada release year paling banyak game coming soon
-3. Info dataset
+2. Info dataset
    Skrip:
 
    ```python
@@ -100,7 +98,7 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
 
    Kesimpulan:
    Dari skrip diatas didapatkan bahwa semua kolom pada dataset ini memiliki tipe object 
-5. Dimensi dataset
+3. Dimensi dataset
    
    Skrip:
    ```python
@@ -116,7 +114,7 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    
    Kesimpulan:
    Dari skrip diatas, dapat disimpulkan bahwa dataset diatas memiliki 71700 baris dan 16 kolom 
-7. Duplikasi dataset
+4. Duplikasi dataset
 
    Skrip:
    ```python
@@ -131,7 +129,7 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    Kesimpulan:
    Dari skrip diatas mengindikasikan bahwa tidak ada data duplikat pada dataset diatas
    
-9. Info  nilai missing
+5. Info  nilai missing
 
    Skrip:
    ```python
@@ -200,10 +198,8 @@ Adapun pendekatan yang dilakukan dalam membangun sistem rekomendasi adalah mengg
 
 1. Content-Base filtering Cosine similarity
    Cosine similarity adalah teknik mengukur kesamaan antara 2 vektor dan menentukan apakah kedua vektor tersebut menunjuk ke arah yang sama. Menghitung sudut cosinus antara 2 vektor, semakin kecil sudut cosinus semakin besar nilai cosine similarity. Adapun rumus Cosine similarity sebagai berikut:
-   
-   $$
-\cos{\theta} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{a}\| \|\vec{b}\|} = \frac{\sum_{i=1}^{n} a_i b_i}{\sqrt{\sum_{i=1}^{n} a_i^2} \sqrt{\sum_{i=1}^{n} b_i^2}}
-$$
+
+![Rumus](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/cosinie.jpeg)
 
 Kelebihan:
 - Efektif jika representasi fitur kaya (TFIDF)
@@ -233,10 +229,10 @@ Hasil:
 
       
 2. Jaccard Similarity  adalah teknik yang dikenalkan Paul Jaccard,metode pengukuran kesamaan antara 2 himpunan dan dihitung sebagai perbandingan antara jumlah elemen yang sama (intersection) dengan jumlah total elemen unik himpunan.
+
   
-  $$
-J(A, B) = \frac{|A \cap B|}{|A \cup B|} = \frac{|A \cap B|}{|A| + |B| - |A \cap B|}
-$$
+![Rumus](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/jaccard.jpeg)
+
 
 Kelebihan:
 - Mudah dan cepat diimplementasikan 
@@ -286,4 +282,4 @@ Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik sistem rekom
 
 Kesimpulan:
 
-Dari perbandingan metrik evaluasi dari kedua pendekatan yaiti Cosine similarity dan Jaccard Similarity bahwa nilai Precision dan F1 Score pada Cosini similarity lebih tinggi dari pada Jaccard similarity sedangkan recall pada Jaccard similarity lebih besar dari pada Cosine similarity. Dapat disimpulkan bahwa yang akan digunakan pada proyek ini adalah Content Based Filtering dengan menggunakan Cosine Similarity
+Dari perbandingan metrik evaluasi dari kedua pendekatan yaiti Cosine similarity dan Jaccard Similarity bahwa nilai Precision dan F1 Score pada Cosini similarity lebih tinggi dari pada Jaccard similarity sedangkan recall pada Jaccard similarity lebih besar dari pada Cosine similarity. Dapat disimpulkan bahwa yang akan digunakan pada proyek ini adalah Content Based Filtering dengan menggunakan Cosine Similarity.

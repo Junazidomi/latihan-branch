@@ -1,5 +1,5 @@
 # Laporan Proyek Machine Learning - Juan Anemao Sokhi Zidomi
-## [Faktor Yang Mempengaruhi Ujian Siswa](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+## [Sistem Rekomendasi Game Steam]
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Industri game telah mengalami pertumbuhan pesat dalam satu dekade terakhir. Menurut laporan dari Newzoo, pasar game global mencapai pendapatan lebih dari $184 miliyar pada tahun 2023, dengan platform digital seperti Steam menyumbang bagian besar dari pendapatan tersebut (Newzoo, 2023). Steam sendiri merupakan salah satu platform distribusi game digital terbesar di dunia, dengan lebih dari 50000 judul game dan jutaan pengguna aktif setiap harinya (Valve Corporation,2023). Dengan volume konten yang sangat besar ini, pengguna seringkali mengalami kesulitan dalam menemukan game yang sesuai dengan preferensi mereka. Hal ini menciptakan kebutuhan akan sistem rekomendasi game yang cerdas dan relevan.
 <br><br>
@@ -29,7 +29,7 @@ Berikut adalah Goals yang akan dicapai:
 - Melakukan evaluasi pada metode cosine similarity dan jaccard similarity dan melakukan rekomendasi game berdasarkan preferensi pengguna.
 ## Data Understandings
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada proyek ini, menjelaskan bahwa steam memiliki game dengan judul yang berbeda-beda. Selain itu, dataset ini memberikan informasi atau gambaran tentang game tersebut seperti harga game , harga setelah diskon di steam jika sedang ada event menarik, pengembang, publisher , review penngguna , genre game dan lain-lain. Hal ini dapat membantu dalam melakukan sistem rekomendasi.
-
+(https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
 | No | Atribute | Description |
 |---------|---------|---------|
 | 1 | Title | Judul Game di Steam |

@@ -27,9 +27,16 @@ Berikut adalah Goals yang akan dicapai:
 ### Solusi Statements
 - Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity. 
 - Melakukan evaluasi pada metode cosine similarity dan jaccard similarity dan melakukan rekomendasi game berdasarkan preferensi pengguna.
+  
 ## Data Understandings
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada proyek ini, menjelaskan bahwa steam memiliki game dengan judul yang berbeda-beda. Selain itu, dataset ini memberikan informasi atau gambaran tentang game tersebut seperti harga game , harga setelah diskon di steam jika sedang ada event menarik, pengembang, publisher , review penngguna , genre game dan lain-lain. Hal ini dapat membantu dalam melakukan sistem rekomendasi.
-(https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+### Pengatar Dataset
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada proyek ini, menjelaskan bahwa steam memiliki game dengan judul yang berbeda-beda. Selain itu, dataset ini memberikan informasi atau gambaran tentang game tersebut seperti harga game , harga setelah diskon di steam jika sedang ada event menarik, pengembang, publisher , review penngguna , genre game dan lain-lain. Hal ini dapat membantu dalam melakukan sistem rekomendasi. Dataset yang digunakan diambil dari platform penyedia dataset yaitu kaggle dan dataset contributor yaitu Nika Tomashvili. Untuk mengakses dataset, dapat melalui link berikut: 
+
+[Link Dataset](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+
+### Variabel atau Fitur
+Variabel atau fitur yang terdapat pada dataset yang digunakan pada proyek ini di jelaskan di tabel dibawah:
+
 | No | Atribute | Description |
 |---------|---------|---------|
 | 1 | Title | Judul Game di Steam |
@@ -49,9 +56,27 @@ Berikut adalah Goals yang akan dicapai:
 | 15 | Game Features | Fitur yang terdapat pada game tersebut
 | 16 | Minimum Requirements| Spesifikasi minimum supaya dapat menjalankan game |
 
-Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek ini:
+### Jumlah Baris dan Kolom
+Untuk mengetahui jimlah baris dan kolom dapat menggunakan perintah pada python sebagai berikut:
+   
+   Skrip:
+   ```python
+      jumlah_baris, jumlah_kolom=Game_df.shape
+      print("Jumlah baris pada dataframe:", jumlah_baris)
+      print("Jumlah kolom pada dataframe:, jumlah_kolom)
+   ```
+   Hasil:
 
-1. Statistik dataset
+      Jumlah baris pada dataframe: 71700
+       <br>
+      Jumlah Kolom pada dataframe: 16
+   
+   Kesimpulan:
+   Berdasarkan hasil dari perintah diatas, dapat disimpulkan dataset dibangun kolom berjumlah 16 dan baris berjumlah 71700
+
+### Identifikasi Kondisi Dataset
+#### Statistik Dataset
+Untuk melihat statistik dataset seperti mean, max, min , nilai yang sering muncul dan lain-lain dapat menggunakan perintah dibawah
 
    Skrip:
    ```python
@@ -68,8 +93,10 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | freq   | 1 |	17585 | 17585 | 5887	| 1 | 34 | 11039 | 3151 | 18999 | 3 | 162 | 459 | 38083| 284 | 17262 | 274  |
 
    Kesimpulan:
-   Dari hasil skrip diatas didapatkan bahwa dataset diatas bahwa game di steam memiliki rata-rata review positif  dari pengguna. Selain itu, game di Steam paling banyak game free atau dapat didapatkan secara gratis dan pada release year paling banyak game coming soon
-2. Info dataset
+   Berdasarkan hasil dari perinyah diatas, didapatkan bahwa dataset diatas bahwa game di steam memiliki rata-rata review positif  dari pengguna. Selain itu, game di Steam paling banyak game free atau dapat didapatkan secara gratis dan pada release year paling banyak game coming soon.
+   
+#### Info dataset
+Untuk melakukan identifikasi kondisi tipe data jenis dataset dapat menggunakan perintah dibawah:
    Skrip:
 
    ```python
@@ -97,24 +124,10 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | 15  | Minimum Requirements        | 70576 non-null  | object |
 
    Kesimpulan:
-   Dari skrip diatas didapatkan bahwa semua kolom pada dataset ini memiliki tipe object 
-3. Dimensi dataset
-   
-   Skrip:
-   ```python
-      jumlah_baris, jumlah_kolom=Game_df.shape
-      print("Jumlah baris pada dataframe:", jumlah_baris)
-      print("Jumlah kolom pada dataframe:, jumlah_kolom)
-   ```
-   Hasil:
+   Berdasarkan hasil dari perintah diatas, didapatkan bahwa semua kolom pada dataset ini memiliki tipe object 
 
-      Jumlah baris pada dataframe: 71700
-   <br>
-      Jumlah Kolom pada dataframe: 16
-   
-   Kesimpulan:
-   Dari skrip diatas, dapat disimpulkan bahwa dataset diatas memiliki 71700 baris dan 16 kolom 
-4. Duplikasi dataset
+#### Duplikasi dataset
+Data duplikat akan sangat menggangu sistem ketika dibangun. Untuk menghindari hal tersebut, melakukan identifikasi jumlah duplikat pada dataframe dengan perintah python sebagai berikut.
 
    Skrip:
    ```python
@@ -127,9 +140,10 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
       Jumlah duplikat data: 0
    
    Kesimpulan:
-   Dari skrip diatas mengindikasikan bahwa tidak ada data duplikat pada dataset diatas
+   Berdasarkan hasil dari perintah diatas, didapatkan bahwa di dataset yang digunakan tidak memiliki duplikat data.
    
-5. Info  nilai missing
+   #### Identifikasi Nilai Missing
+   Dalam membangun suatu sistem, kondisi dataset harus bebas dari nilai NaN supaya sistem dapat bekerja secara optimal. Untuk mengidentfikasi kolom mana saja dan jumlah baris yang terdapat nilai NaN dapat menggunakan perintah python dibawah. 
 
    Skrip:
    ```python
@@ -155,8 +169,27 @@ Berikut ini adalah deskripsi dataset Steam Game Dataset yang dipakai pada proyek
    | Game Features              | 0              |
    | Minimum Requirements       | 1124           |
    
-   Kesimpilan:
-   Dari skrip diatas didapatkan hampir semua kolom memiliki nilai missing value dan membutuhkan penanganan terhadap missing value supaya sistem dapat bekerja secara optimal.
+   Kesimpulan:
+   Berdasarkan dari perintah diatas, didapatkan bahwa ada hampir semua kolom memiliki NaN Atau missing value dan paling banyak terdapat pada kolom All Review Summary dan All Reviews Number.
+#### Identifikasi Kondisi Dataset Original Price
+Pada proses ini, melakukan identifikasi kondisi kolom Original Price karena pada dasarnya price adalah kolom bertipe number. Untuk mengidentifikasi kolom Original Price dapat menggunakan perintah python dibawah.
+
+Skrip:
+```python
+   Game_df['Original Price'].head()
+```
+Hasil:
+|       | Original Price |
+|-------|----------------|
+|   0	  |     $29.99     |
+|   1	  |     $14.99     |
+|   2	  |      Free      |
+|   3	  |     $34.78     |
+|   4	  |      Free      |
+
+Kesimpulan:
+Berdasarkan hasil dari perintah diatas, kolom Original Price dapat diubah menjadi kolom number dengan cara melakukan pengubahan free menjadi 0 dan untuk yang tidak free diubah menjadi angka dengan cara menghapus tanda $
+
 ### EDA
 <br>
 Visualisasi review summary game di Steam

@@ -17,22 +17,22 @@ Referensi:
 
 ### Problem Statements
 Berikut adalah problem statements pada proyek ini:
-- Pengguna Steam kesulitan dalam menemukan game yang relevan dengan preferensi karena banyaknya game tersedia di Steam
-- Game Indie atau game kurang populer cenderung kalah bersaing dengan pengembang game populer
+- Kesulitan menemukan game sesuai dengan preferensi pengguna
+- Ketimpangan eksposur untuk game idle atau kurang populer
 ### Goals
 Berikut adalah Goals yang akan dicapai:
 - Membangun sistem rekomendasi yang dapat secara otomatis yang dapat menyarankan game sesuai dengan preferensi pengguna di Steam
-- Membangun sistem rekomendasi yang dapat memberikan peluang lebih merata bagi semua game untuk muncul rekomendasi
+- Memberikan peluang yang lebih merata untuk semua game
   
 ### Solusi Statements
-- Membangun sistem rekomendasi menggunakan metode Content-base filtering berdasarkan cosine similarity dan jaccard similarity. 
-- Melakukan evaluasi pada metode cosine similarity dan jaccard similarity dan melakukan rekomendasi game berdasarkan preferensi pengguna.
+- Mengembangkan sistem rekomendasi menggunakan pendekatan content base filtering berdasarkan cosine similarity dan jaccard similarity untuk mengukur kesamaan antar game berdasarkan atribut kontennya. 
+- Sistem diuji dan dievaluasi menentukan pendekatan yang paling optimal dalam menyarankan game yang sesuai dengan preferensi pengguna
   
 ## Data Understandings
 ### Pengatar Dataset
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada dataset yang digunakan pada proyek ini, menjelaskan bahwa steam memiliki game dengan judul yang berbeda-beda. Selain itu, dataset ini memberikan informasi atau gambaran tentang game tersebut seperti harga game , harga setelah diskon di steam jika sedang ada event menarik, pengembang, publisher , review penngguna , genre game dan lain-lain. Hal ini dapat membantu dalam melakukan sistem rekomendasi. Dataset yang digunakan diambil dari platform penyedia dataset yaitu kaggle dan dataset contributor yaitu Nika Tomashvili. Untuk mengakses dataset, dapat melalui link berikut: 
 
-[Link Dataset](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+[Link Dataset](https://www.kaggle.com/datasets/nikatomashvili/steam-games-dataset)
 
 ### Variabel atau Fitur
 Variabel atau fitur yang terdapat pada dataset yang digunakan pada proyek ini di jelaskan di tabel dibawah:
@@ -195,7 +195,7 @@ Berdasarkan hasil dari perintah diatas, kolom Original Price dapat diubah menjad
 Visualisasi review summary game di Steam
 <br>
 
-![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis11.png)
 <br>   
 Kesimpulan: 
 Dari visualisasi diatas didapatkan bahwa feedback dari pengguna game steam yaitu very positive hal ini menandakan bahwa semua game di Steam mendapatkan apresiasi positif dari pengguna
@@ -203,7 +203,7 @@ Dari visualisasi diatas didapatkan bahwa feedback dari pengguna game steam yaitu
 Visualisasi tahun rilis game
 <br>
 
-![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis22.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis22.png)
 <br> 
 
 Kesimpulan:
@@ -211,7 +211,7 @@ Dari visualisasi diatas didapat bahwa game paling banyak di Steam adalah game ri
 Visualisasi distribusi harga game di Steam
 <br>
 
-![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis33.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Visualisasi](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/vis33.png)
 
 Kesimpulan:
 Dari visualisasi diatas didapatkan bahwa game steam paling banyak harga 0 $ atau dapat dikatakan gratis dan harga game paling mahal pada sekitar 140$
@@ -221,10 +221,11 @@ Dari visualisasi diatas didapatkan bahwa game steam paling banyak harga 0 $ atau
 Proses persiapan data yang dilakukan pada proyek ini sebagai berikut:
 
 1. Melakukan hapus kolom yang berisi NaN atau missing value. Pada proses ini setelah dilakukan identifikasi dataset pada missing value atau NaN, maka dilakukan penanganan missing value yaitu menghapus baris yang memiliki NaN atau missing value. Hal ini bertujuan untuk mengoptimalkan sistem rekomendasi content-base filtering dan mendapatkan informasi yang secara lengkap supaya dapat memberikan rekomendasi secara akurat.
-2. Melakukan identifikasi pada kolom Original Price. Setelah itu, melakukan pengubahan kata unique 'Free' menjadi 0, kemudian melakukan pengubahan tipe pada kolom Original Price dari object menjadi float dan terakhir melakukan pengubahan nama kolom dari Original Price menjadi Original Price (S). Hal ini bertujuan untuk melakukan visualisasi pada kolom harga game di steam dan melihat berapa banyak game gratis dan game harga mahal
-3. Melakukan format ulang tanggal rilis game dari tanggal rilis menjadi tahun rilis. Hal ini bertujuan untuk melakukan visualisasi tahun rilis game pada Steam. Selain itu, melakukan pengubahan nama kolom dari Release Date menjadi Release Year
-4. Melakukan pemrosesan pada kolom Popular Tags dimana melakukan pengambilan 3 tag dari 20 genre. Selain itu, menghapus spasi pada tag supaya dapat diproses ke tahap selanjutnya
-5. Melakukan preprocessing text menggunakan TfIdf vectorizer atau melakukan tokenisasi untuk mempresentasikan kolom target ke matriks agar dapat diproses.
+2. Melakukan drop kolom yang tidak digunakan. Hal ini penting dilakukan supaya dapat membuat sistem dapat bekerja secara optimal sesuai dengan informasi yang relevan.
+3. Melakukan pengubahan nilai unik Free menjadi 0 kemudian menghapus $ pada harga setiap game selain free pada kolom Original Price dan mengganti kolom Original Price menjadi Original Price ($)
+4. Melakukan format ulang tanggal rilis game dari tanggal rilis menjadi tahun rilis. Hal ini bertujuan untuk melakukan visualisasi tahun rilis game pada Steam. Selain itu, melakukan pengubahan nama kolom dari Release Date menjadi Release Year
+5. Melakukan pemrosesan pada kolom Popular Tags dimana melakukan pengambilan 3 tag dari 20 genre. Selain itu, menghapus spasi pada tag supaya dapat diproses ke tahap selanjutnya
+6. Melakukan preprocessing text menggunakan TfIdf vectorizer atau melakukan tokenisasi untuk mempresentasikan kolom target ke matriks agar dapat diproses.
     
 ## Modeling and Result
 Adapun pendekatan yang dilakukan dalam membangun sistem rekomendasi adalah menggunakan sistem content-based filterng. Dalam membangun sistem rekomendasi content based filtering menggunakan 2 metode yaitu content-based filtering menggunakan cosine similarity dan Jaccard similarity.
@@ -232,7 +233,7 @@ Adapun pendekatan yang dilakukan dalam membangun sistem rekomendasi adalah mengg
 1. Content-Base filtering Cosine similarity
    Cosine similarity adalah teknik mengukur kesamaan antara 2 vektor dan menentukan apakah kedua vektor tersebut menunjuk ke arah yang sama. Menghitung sudut cosinus antara 2 vektor, semakin kecil sudut cosinus semakin besar nilai cosine similarity. Adapun rumus Cosine similarity sebagai berikut:
 
-![Rumus](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/cosinie.jpeg)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Rumus](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/cosinie.jpeg)
 
 Kelebihan:
 - Efektif jika representasi fitur kaya (TFIDF)
@@ -264,7 +265,7 @@ Hasil:
 2. Jaccard Similarity  adalah teknik yang dikenalkan Paul Jaccard,metode pengukuran kesamaan antara 2 himpunan dan dihitung sebagai perbandingan antara jumlah elemen yang sama (intersection) dengan jumlah total elemen unik himpunan.
 
   
-![Rumus](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/jaccard.jpeg)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Rumus](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/jaccard.jpeg)
 
 
 Kelebihan:
@@ -315,4 +316,5 @@ Evaluasi yang akan digunakan pada proyek ini adalah evaluasi metrik sistem rekom
 
 Kesimpulan:
 
-Dari perbandingan metrik evaluasi dari kedua pendekatan yaiti Cosine similarity dan Jaccard Similarity bahwa nilai Precision dan F1 Score pada Cosini similarity lebih tinggi dari pada Jaccard similarity sedangkan recall pada Jaccard similarity lebih besar dari pada Cosine similarity. Dapat disimpulkan bahwa yang akan digunakan pada proyek ini adalah Content Based Filtering dengan menggunakan Cosine Similarity.
+1. Berdasarkan metrik evaluasi antara Cosine dan Jaccard Similarity didapatkan bahwa cosine similarity mempunyai F1 Score lebih besar. Selain itu, dari hasil rekomendasi cosine similarity memberikan rekomendasi game paling banyak daripada jaccard similarity berdasarkan genre. Dapat disimpulkan bahwa sistem rekomendasi akan dibangun menggunakan Content-Base Filtering menggunakan pendekatan Cosine Similarity
+2. Sistem rekomendasi sudah dapat menyaring game sesuai dengan preferensi pengguna bukan menggunakan popularitas game. Hal ini akan membantu pengembang game kecil mendapatkan kesempatan merata dengan pengembang game besar dan rekomendasi game sesuai dengan prefrensi pengguna

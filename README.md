@@ -68,7 +68,9 @@ Adapun business board dibuat beberapa segmen yaitu:
 
 ## Conclusion
 
-Jelaskan konklusi dari proyek yang dikerjakan.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proyek ini dapat melakukan prediksi terhadap karyawan yang pengunduran diri diperusahaan Jaya Jaya Maju, dengan menggunakan pendekatan machine learning sistem dapat memprediksi berdasarkan data yang diberikan. Selain itu, setelah dilakukan machine learning dan fitur selection bahwa pada dataset semuanya berkontribusi pada penentuan nilai klasifikasi. Hal ini dapat dilihat ketika melakukan seleksi fitur akurasi prediksi turun dari prediksi semua kolom pada dataset. Namun, berdasarkan fitur seleksi didapatkan 10 faktor utama yaitu Gender, Envirotment Satisfication, JobInvolment, Job Level, JobSatisfication, Overtime, PerformanceRating, RelationshipSatisfaction, StockOptionLevel, WorkLifeBalance.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Selain itu, dengan diterapkannya sistem Dashboard yang interaktif menggunakan Docker Metabase, dapat memantau kondisi teknisi dari karyawan, mengidentifikasi Attrition rate berdasarkan data serta memudahkan dalam pengambilan keputusan.Dengan adanya sistem pemantauan ini diharapkan dapat proaktif dalam manajemen karyawan dan menurunkan Attrition rate serta memaksimalkan kinerja stabilitas perusahaan
 
 ### Rekomendasi Action Items (Optional)
 

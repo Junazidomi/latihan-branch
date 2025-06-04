@@ -75,7 +75,15 @@ Jelaskan konklusi dari proyek yang dikerjakan.
 Rekomendasi Action Items yang dapat dilakukan oleh perusahaan Jaya-Jaya Maju untuk menangani masalah tersebut:
 
 - Membangun dan menerapkan sistem peringatan dini( Early Warning)
+  
   Membangun sistem dengan pendekatan supervised machine learning klasifikasi untuk memprediksi karyawan apakah karyawan akan melakukan pengunduran diri atau tidak    berdasarkan data-data yang tersedia
+  
 - Membangun Dashboard yang interaktif ke sistem HR
-- Melakukan survey secara berkala
-- Meninjau ulang kebijakan perusahaan
+
+  Membangun dan mengimplentasikan dashboard interaktif yang memonitor kinerja dan kondisi perusahaan yang kemudian di integrasi pada sistem karyawa pada divisi HRD
+  
+- Melakukan survey secara berkala dan meninjau ulang kebijakan perusahaan
+
+  Melakukan survey kepada karyawan seperti menyangkut kepuasaan karyawan terhadap perusahaan, gaji yang diterima dan lain-lain kemudian peninjauan ulang dan          menerapkan rencana strategis untuk menghadapi masalah tersebut
+  
+

@@ -56,10 +56,11 @@ Adapun business board dibuat beberapa segmen yaitu:
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada komposisi karyawan dan posisi dibagi 3 grafik yaitu Department by Attrition, Job role attrition dan Gender attrition.  Pada      department by attrition, jumlahkaryawan yang bekerja di Jaya Jaya Maju paling banyak di departemen Research, tetapi departemen mengalami banyak Attrition dan       development dan paling kecil yaitu departemen Human Resource dan departemen paling sedikit mengalami Attrition. Pada jobrole by attrition, pada jobrole paling      banyak mengalami Attrition dan jumlah karyawan yang bekerja sebagai jobrole Other. Pada grafik terakhir yaitu gender by attrition, jumlah karyawan laki-laki        paling bekerja di perusahaan Jaya Jaya Maju dan paling banyak mengalami Attrition.
    
 3. Berdasarkan tingkatan performansi dan pekerjaa pada karyawan
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(3).png)
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada segment ini dibagi menjadi 3 yaitu berdasarkan Performance rating, tingkat pekerjaan dan keterlibatan bekerja. Pada             Performance didapatkan bahwa performance didominasi pada tingkat 3 dan tingkat 4 menandakan bahwa karyawan di perusahaan Jaya Jaya Majuse memiliki performance      yang baik. Pada Job level, didominasi pada tingkat 1 dan tingkat 2 menandakan tingkatan pekerjaan di Jaya Jaya Maju tergolong mudah. Pada Grafik terakhir yaitu job involment bahwa tingkat keterlibatan kerja karyawan pada tingkat 3.
    
-5. Kategori Usia karyawan yang bekerja
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(3).png)
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada segment ini dibagi menjadi 3 yaitu berdasarkan Performance rating, tingkat pekerjaan dan keterlibatan bekerja. Pada             Performance didapatkan bahwa performance didominasi pada tingkat 3 dan tingkat 4 menandakan bahwa karyawan di perusahaan Jaya Jaya Majuse memiliki performance      yang baik. Pada Job level, didominasi pada tingkat 1 dan tingkat 2 menandakan tingkatan pekerjaan di Jaya Jaya Maju tergolong mudah. Pada Grafik terakhir yaitu    job involment bahwa tingkat keterlibatan kerja karyawan pada tingkat 3.
+   
+4. Kategori Usia karyawan yang bekerja
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(4).png)
 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan grafik diatas, dapat disimpulkan bahwa kategori usia didominasi oeh kategori Early Career (18-25) dan Mid Career (36-     45). Namun tingkat attrition karyawan paling tinggi pada Early Career (18-25)
@@ -71,7 +72,10 @@ Jelaskan konklusi dari proyek yang dikerjakan.
 
 ### Rekomendasi Action Items (Optional)
 
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
+Rekomendasi Action Items yang dapat dilakukan oleh perusahaan Jaya-Jaya Maju untuk menangani masalah tersebut:
 
-- action item 1
-- action item 2
+- Membangun dan menerapkan sistem peringatan dini( Early Warning)
+  Membangun sistem dengan pendekatan supervised machine learning klasifikasi untuk memprediksi karyawan apakah karyawan akan melakukan pengunduran diri atau tidak    berdasarkan data-data yang tersedia
+- Membangun Dashboard yang interaktif ke sistem HR
+- Melakukan survey secara berkala
+- Meninjau ulang kebijakan perusahaan

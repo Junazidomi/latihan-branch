@@ -30,11 +30,29 @@ Cakupan proyek yang dilakukan yaitu:
 Sumber data: [Jaya Jaya Maju](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee)
 
 Setup environment:
-
+- Menyiapkan Docker
 ```
     docker pull metabase/metabase:v0.46.4
     docker run -p 3000:3000 --name metabase metabase/metabase
 ```
+- Membuat dan Mengaktifkan Virtual Envirotment
+   ```bash
+      python   -m venv venv
+   ```
+- Aktifkan Envirotment
+  - Windows
+    ```bash
+    venv\Scripts\activate
+    ```
+  - MacOS/Linux
+    ```bash
+    source  venv/bin/activate
+    ```
+- Install Dependecies
+  ```bash
+  pip install -r requirements.txt
+  ```
+  
 
 Username dan Password:
 ```

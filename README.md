@@ -31,10 +31,10 @@ Sumber data: [Jaya Jaya Maju](https://github.com/dicodingacademy/dicoding_datase
 
 Setup environment:
 - Menyiapkan Docker
-```
-    docker pull metabase/metabase:v0.46.4
-    docker run -p 3000:3000 --name metabase metabase/metabase
-```
+   ```
+       docker pull metabase/metabase:v0.46.4
+       docker run -p 3000:3000 --name metabase metabase/metabase
+   ```
 - Membuat dan Mengaktifkan Virtual Envirotment
    ```bash
       python   -m venv venv
@@ -49,10 +49,20 @@ Setup environment:
     source  venv/bin/activate
     ```
 - Install Dependecies
-  ```bash
-  pip install -r requirements.txt
-  ```
-  
+    ```bash
+    pip install -r requirements.txt
+    ```
+-  Cara menjalankan file prediksi python
+   Pastikan file python satu folder dengan notebook.ipynb dan employee.csv
+   - Menjalankan di notebook.ipnb
+     ```bash
+     !python Predict.py
+     ```
+   - Menjalankan di envirotment yang dibuat
+     ```bash
+     python Predict.py
+     ```
+     
 
 Username dan Password:
 ```

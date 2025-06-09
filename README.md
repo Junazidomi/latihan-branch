@@ -84,16 +84,16 @@ Adapun business board dibuat beberapa segmen yaitu:
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada komposisi karyawan dan posisi dibagi 3 grafik yaitu Department by Attrition, Job role attrition dan Gender attrition.  Pada     department by attrition, jumlahkaryawan yang bekerja di Jaya Jaya Maju paling banyak di departemen Research, tetapi departemen mengalami banyak Attrition dan      development dan paling kecil yaitu departemen Human Resource dan departemen paling sedikit mengalami Attrition. Pada jobrole by attrition, pada jobrole paling     banyak mengalami Attrition dan jumlah karyawan yang bekerja sebagai jobrole Other. Pada grafik terakhir yaitu gender by attrition, jumlah karyawan laki-laki       paling bekerja di perusahaan Jaya Jaya Maju dan paling banyak mengalami Attrition.
    
 3. Berdasarkan tingkatan performansi dan pekerjaa pada karyawan
-   
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dash.png)
-   https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dash.png
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   jkjk
    
 4. Kategori Usia karyawan yang bekerja
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(3).png)
+   
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(6).png)
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan grafik diatas, dapat disimpulkan bahwa kategori usia didominasi oeh kategori Early Career (18-25) dan Mid Career (36-     45). Namun tingkat attrition karyawan paling tinggi pada Early Career (18-25)
-5. Kategori Gaji perbulan karyawan dengan Attrition
+6. Kategori Gaji perbulan karyawan dengan Attrition
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(6).png)
 
 ## Conclusion

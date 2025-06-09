@@ -86,14 +86,14 @@ Adapun business board dibuat beberapa segmen yaitu:
 3. Berdasarkan tingkatan performansi dan pekerjaa pada karyawan
    
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dash.png)
-   
+   https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dash.png
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
    
-5. Kategori Usia karyawan yang bekerja
+4. Kategori Usia karyawan yang bekerja
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(3).png)
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan grafik diatas, dapat disimpulkan bahwa kategori usia didominasi oeh kategori Early Career (18-25) dan Mid Career (36-     45). Namun tingkat attrition karyawan paling tinggi pada Early Career (18-25)
-6. Kategori Gaji perbulan karyawan dengan Attrition
+5. Kategori Gaji perbulan karyawan dengan Attrition
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(6).png)
 
 ## Conclusion

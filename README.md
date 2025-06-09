@@ -74,7 +74,7 @@ Username dan Password:
 Adapun business board dibuat beberapa segmen yaitu:
 1. Berdasarkan tingkat kepuasan karyawan pada perusahan
 
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(5).png)
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(8).png)
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada segmen kepuasan karyawan terlihat dibagi 3 faktor yaitu lingkungan, pekerjaan dan hubungan sesama karyawan. Pada Environtment    satisfication lebih dominan terhadap tingkat 4, pada job satisfication berada pada tingkat 3 dan relationship satisfication berada pada tingkat 3 dan               tingkat 4. Namun pada setiap grafik yang ditampilkan, tingkat 1 pada setiap grafik sekitar 19-20% dan tingkat pada setiap grafik 18-20%, jika digabung ada          sekitar 1/3 karyawan yang tidak puas terhadap perusahaan pada bidang lingkungan, pekerjaan dan hubungan.
    

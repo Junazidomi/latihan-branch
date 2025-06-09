@@ -76,23 +76,25 @@ Adapun business board dibuat beberapa segmen yaitu:
 
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(8).png)
    
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada segmen kepuasan karyawan terlihat dibagi 3 faktor yaitu lingkungan, pekerjaan dan hubungan sesama karyawan. Pada Environtment    satisfication lebih dominan terhadap tingkat 4, pada job satisfication berada pada tingkat 3 dan relationship satisfication berada pada tingkat 3 dan               tingkat 4. Namun pada setiap grafik yang ditampilkan, tingkat 1 pada setiap grafik sekitar 19-20% dan tingkat pada setiap grafik 18-20%, jika digabung ada          sekitar 1/3 karyawan yang tidak puas terhadap perusahaan pada bidang lingkungan, pekerjaan dan hubungan.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada segmen kepuasan karyawan terlihat dibagi 3 faktor yaitu lingkungan, pekerjaan dan hubungan sesama karyawan. Pada Environtment satisfication lebih dominan terhadap tingkat 4, pada job satisfication berada pada tingkat 3 dan relationship satisfication berada pada tingkat 3 dan    tingkat 4. Namun pada setiap grafik yang ditampilkan, tingkat 1 pada setiap grafik sekitar 19-20% dan tingkat pada setiap grafik 18-20%, jika digabung ada          sekitar 1/3 karyawan yang tidak puas terhadap perusahaan pada bidang lingkungan, pekerjaan dan hubungan.
    
 2. Berdasarkan komposisi karyawan dan posisi
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(2).png)
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard.png)
 
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada komposisi karyawan dan posisi dibagi 3 grafik yaitu Department by Attrition, Job role attrition dan Gender attrition.  Pada      department by attrition, jumlahkaryawan yang bekerja di Jaya Jaya Maju paling banyak di departemen Research, tetapi departemen mengalami banyak Attrition dan       development dan paling kecil yaitu departemen Human Resource dan departemen paling sedikit mengalami Attrition. Pada jobrole by attrition, pada jobrole paling      banyak mengalami Attrition dan jumlah karyawan yang bekerja sebagai jobrole Other. Pada grafik terakhir yaitu gender by attrition, jumlah karyawan laki-laki        paling bekerja di perusahaan Jaya Jaya Maju dan paling banyak mengalami Attrition.
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pada komposisi karyawan dan posisi dibagi 3 grafik yaitu Department by Attrition, Job role attrition dan Gender attrition.  Pada     department by attrition, jumlahkaryawan yang bekerja di Jaya Jaya Maju paling banyak di departemen Research, tetapi departemen mengalami banyak Attrition dan      development dan paling kecil yaitu departemen Human Resource dan departemen paling sedikit mengalami Attrition. Pada jobrole by attrition, pada jobrole paling     banyak mengalami Attrition dan jumlah karyawan yang bekerja sebagai jobrole Other. Pada grafik terakhir yaitu gender by attrition, jumlah karyawan laki-laki       paling bekerja di perusahaan Jaya Jaya Maju dan paling banyak mengalami Attrition.
    
 3. Berdasarkan tingkatan performansi dan pekerjaa pada karyawan
    
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(3).png)
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada segment ini dibagi menjadi 3 yaitu berdasarkan Performance rating, tingkat pekerjaan dan keterlibatan bekerja. Pada             Performance didapatkan bahwa performance didominasi pada tingkat 3 dan tingkat 4 menandakan bahwa karyawan di perusahaan Jaya Jaya Majuse memiliki performance      yang baik. Pada Job level, didominasi pada tingkat 1 dan tingkat 2 menandakan tingkatan pekerjaan di Jaya Jaya Maju tergolong mudah. Pada Grafik terakhir yaitu    job involment bahwa tingkat keterlibatan kerja karyawan pada tingkat 3.
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dash.png)
    
-4. Kategori Usia karyawan yang bekerja
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(4).png)
-
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+   
+5. Kategori Usia karyawan yang bekerja
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(3).png)
+   
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan grafik diatas, dapat disimpulkan bahwa kategori usia didominasi oeh kategori Early Career (18-25) dan Mid Career (36-     45). Namun tingkat attrition karyawan paling tinggi pada Early Career (18-25)
-
+6. Kategori Gaji perbulan karyawan dengan Attrition
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(6).png)
 
 ## Conclusion
 

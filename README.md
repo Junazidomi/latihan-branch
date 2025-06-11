@@ -89,12 +89,12 @@ Adapun business board dibuat beberapa segmen yaitu:
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berdasarkan grafik diatasm dapat disimpulkan pada job level, pada level 1 mengalami attrition paling banyak dibandingakn level lain, sedangkan pada job involment pada level 3 mengalami banyak attrition
    
    
-5. Kategori Usia karyawan yang bekerja
+4. Kategori Usia karyawan yang bekerja
    
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(6).png)
    
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan grafik diatas, dapat disimpulkan bahwa kategori usia didominasi oleh kategori Early Career (18-25) dan Mid Career (36-     45). Namun tingkat attrition karyawan paling tinggi pada Early Career (18-25)
-6. Kategori Gaji perbulan karyawan dengan Attrition
+5. Kategori Gaji perbulan karyawan dengan Attrition
    ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashboard%20(6).png)
 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pada grafik kategori gaji perbulan, didapatkan bahwa kategori haji rendah ,karyawan melakukan attrition dan yang paling rendah pada kategori gaji perbulan tinggi

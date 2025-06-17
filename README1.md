@@ -30,11 +30,49 @@ Setup environment:
        docker pull metabase/metabase:v0.46.4
        docker run -p 3000:3000 --name metabase metabase/metabase
    ```
-- Membuat dan Mengaktifkan Virtual Envirotment
+
+Username dan Password Metabase:
+```
+   User     :root@mail.com
+   Password :root123
+```
+## Business Dashboard
+Adapun Business Dashboard yang dibuat berdasarkan segmen:
+1. Berdasarkan Kondisi siswa dengan Tingkat Dropout
+   
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(1).png)
+   
+   Kesimpulan:
+   Dari segmen ini pada grafik Graduation status by international , didapatkan bahwa siswa yang yang mengalami droput sedikit pada kategori 'no', pada grafik kedua displaced by Graduation status siswa mayoritas dropout pada kategori 'yes'. Pada grafik ke 3, dapat disiumpulkan yang tidak mengalami dropout pada kategori 'no ' pada scholarship holder
+   
+3. Berdasarkan metode pendaftaran dan urutan jurusan yang dipilih siswa dengan tingkat dropout
+   
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(2).png)
+   
+   Kesimpulan:
+   Berdasarkan segmen ini, dapat dilihat ada 2 garfik .Grafik pertama berdasarkan pemilihan urutan jurusan siswa, pada pilihan 1 banyak siswa mengalami dropout dan yang paling banyak graduate, sedangkan pada grafik ke 2, metode pendaftaran 1 memiliki banyak graduate dan kategori other paling banyak kasus dropout
+   
+3. Berdasarkan apakah siswa debtor dan gender dengan tingkat dropout
+   
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(4).png)
+   
+   Kesimpulan:
+   Berdasarkan segmen ini dibagi menjadi 2 yaitu gender dan debtor.Berdasarkan grafik gender by Graduation Status, bahwa yang female dan male memiliki proporsi sama DropOut dan yang paling banyak Graduate adalah Female, sedangkan pada grafik debtor by  GraduationStatus bahwa kasus dropout mahasiswa paling sedkit pada kategori 'no '
+4. Berdasarkan kategori Admission Grade dengan tingkat dropout
+   
+   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(3).png)
+
+   Kesimpulan:
+   Berdasarkan grafik  diatas, kategori admission grade low memiliki banyak student dropout dibandingkan dengan kategori lain, dan yang paling sedikit pada kategori very high. Untuk siswa graduated  paling banyak kategori Low dan yang paling sedikit Very High
+   
+
+## Menjalankan Sistem Machine Learning
+Cara Menjalankan sistem machine learning 
+- Membuat dan Mengaktifkan Virtual Environment
    ```bash
       python   -m venv venv
    ```
-- Aktifkan Envirotment
+- Aktifkan Environment
   - Windows
     ```bash
     venv\Scripts\activate
@@ -47,25 +85,11 @@ Setup environment:
     ```bash
     pip install -r requirements.txt
     ```
-## Business Dashboard
-Adapun Business Dashboard yang dibuat berdasarkan segmen:
-1. Berdasarkan Kondisi siswa dengan Tingkat Dropout
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(1).png)
-
-2. Berdasarkan metode pendaftaran dan urutan jurusan yang dipilih siswa dengan tingkat dropout
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(2).png)
-3. Berdasarkan apakah siswa debtor dan gender dengan tingkat dropout
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(4).png)
-4. Berdasarkan kategori Admission Grade dengan tingkat dropout
-   ![Dashboard](https://raw.githubusercontent.com/Junazidomi/latihan-branch/refs/heads/main/Dashb%20(3).png)
-
-## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
-
-```
-
-```
-
+- Jalankan Web App
+  ```bash
+    streamlit run Tugas.py
+    ```
+Link Untuk mengakses Web App
 ## Conclusion
 Jelaskan konklusi dari proyek yang dikerjakan.
 

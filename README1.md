@@ -1,5 +1,5 @@
 
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
+# Proyek Akhir: Menyelesaikan masalah Jaya Jaya Maju
 
 ## Business Understanding
 Jelaskan latar belakang bisnis dari perushaan tersebut.

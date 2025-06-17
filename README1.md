@@ -89,7 +89,8 @@ Cara Menjalankan sistem machine learning
   ```bash
     streamlit run Tugas.py
     ```
-Link Untuk mengakses Web App: ![WebApp](https://tugasml-uxunhs7mx9cn7m5ixrbx9s.streamlit.app/)
+Link Untuk mengakses Web App:
+Web App (https://tugasml-uxunhs7mx9cn7m5ixrbx9s.streamlit.app/)
 
 ## Conclusion
 Jelaskan konklusi dari proyek yang dikerjakan.

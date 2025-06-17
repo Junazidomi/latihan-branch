@@ -93,7 +93,7 @@ Link Untuk mengakses Web App:
 Web App (https://tugasml-uxunhs7mx9cn7m5ixrbx9s.streamlit.app/)
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+
 
 ### Rekomendasi Action Items
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.

@@ -92,11 +92,16 @@ Cara Menjalankan sistem machine learning
 Link Untuk mengakses Web App:
 Web App (https://tugasml-uxunhs7mx9cn7m5ixrbx9s.streamlit.app/)
 
-## Conclusion
 
+## Conclusion
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Proyek ini dapat melakukan prediksi terhadap siswa yang akan dropout di Jaya-Jaya Institute, dengan menggunakan pendekatan machine learning sehingga sistem dapat melakukan prediksi berdasarkan data yang diberikan. Selain itu, setelah dilakukan proses eksploarasi pada dataset dengan menggunakan metode feature selection di dapatkan bahwa faktor siswa akan mengalami dropout yaitu Educational_special_needs, Debtor, Tuition_fees_up_to_date, Scholarship_holder, International, Curricular_units_1st_sem_credited, Curricular_units_1st_sem_approved, Curricular_units_2nd_sem_credited, Curricular_units_2nd_sem_enrolled,dan Curricular_units_2nd_sem_approved.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selain itu, dengan diterapkannya sistem Dashboard yang interaktif menggunakan Docker Metabase, dapat memantau kondisi teknisi dari siswa, mengidentifikasi droput  berdasarkan data serta memudahkan dalam pengambilan keputusan.Dengan adanya sistem pemantauan ini diharapkan dapat proaktif dalam memantau siswa yang mengalami dropout dan memberikan penanganan tepat.
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+Rekomendasi Action Items yang dapat dilakukan oleh perusahaan Jaya Jaya Institute sebagai berikut:
+- Membangun dashboard analitik untuk memantau perkembangan kondisi akademik di Jaya-Jaya Institut supaya dapat mengambil langkah selanjutnya betdasarkan data
+- Membangun sistem machine learning yang dapat melakukan prediksi siswa yang mana saja yang dropout dan daapat memberikan perlakuan khusus yang tepat sasaran
+- Melakukan survey pada mahasiswa untuk menilai sistem pendidikan dan mengambil langkah untuk memperbaikinya
+
 

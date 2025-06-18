@@ -101,6 +101,7 @@ Web App (https://tugasml-uxunhs7mx9cn7m5ixrbx9s.streamlit.app/)
 ### Rekomendasi Action Items
 Rekomendasi Action Items yang dapat dilakukan oleh perusahaan Jaya Jaya Institute sebagai berikut:
 - Membangun dashboard analitik untuk memantau perkembangan kondisi akademik di Jaya-Jaya Institut supaya dapat mengambil langkah selanjutnya betdasarkan data
+  Membangun dan memonitoring kondisis setiap mahasiswa dengan menggunakan Dashboard interaktif menggunakan teknologi seperti Streamlit dan Metadata untuk memantau 
 - Membangun sistem machine learning yang dapat melakukan prediksi siswa yang mana saja yang dropout dan daapat memberikan perlakuan khusus yang tepat sasaran
 - Melakukan survey pada mahasiswa untuk menilai sistem pendidikan dan mengambil langkah untuk memperbaikinya
 
